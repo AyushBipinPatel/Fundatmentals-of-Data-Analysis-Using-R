@@ -37,7 +37,7 @@ Dr Saswata has graciously prepared two documents that detail the logistics and s
   
 ## R journey
 
-<img src = "https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/r_first_then.png", height = 80%>
+![leaRning R](https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/r_first_then.png)
   
 ## About the Instructor
 
