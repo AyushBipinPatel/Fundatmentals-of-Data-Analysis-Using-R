@@ -31,13 +31,17 @@ All links to lecture slides will be uploaded here a day prior to the lecture, or
 
 Dr Saswata has graciously prepared two documents that detail the logistics and schedule of this workshop. Links to both documents are below.
 
-[Workshop Logistics Document](/course documents/R_WS_ECONKPC.pdf)
+[Workshop Logistics Document](https://github.com/AyushBipinPatel/Fundatmentals-of-Data-Analysis-Using-R/blob/main/course%20documents/R_WS_ECONKPC.pdf)
 
-[Workshop Schedule Document](/course documents/Course Schedule.pdf)
+[Workshop Schedule Document](https://github.com/AyushBipinPatel/Fundatmentals-of-Data-Analysis-Using-R/blob/main/course%20documents/Course%20Schedule.pdf)
+  
+## R journey
+
+<img src = "https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/r_first_then.png", height = 80%>
   
 ## About the Instructor
 
-Hi, I am Ayush. I am a [RStudio Certified Tidyverse Instructor](https://education.rstudio.com/trainers/people/patel+ayush/. I enjoy teaching data analysis skills using R (doing this also helps me keep pace with new developments in R).
+Hi, I am Ayush. I am a [RStudio Certified Tidyverse Instructor](https://education.rstudio.com/trainers/people/patel+ayush/). I enjoy teaching data analysis skills using R (doing this also helps me keep pace with new developments in R).
 
 I have received formal training in Engineering and Economics. My work is focused on understand the process of development and my interests are in rights based laws, poverty measurement, all things data and public policy. 
 
