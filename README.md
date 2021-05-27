@@ -2,7 +2,7 @@
 
 This is the permamnemt landing page of the workshop. All materials related to the workshop can be accessed through this space.
 
-This workshop is organised by [Department of Economics, Kanchrapara COllege](https://www.kanchraparacollege.ac.in/), Kalyani University. 
+This workshop is organised by [Department of Economics, Kanchrapara College](https://www.kanchraparacollege.ac.in/), Kalyani University. 
 
 The aim of the workshop is to expose first time R learners with the key techniques that are essential for any one who wants to analyze data. 
 
