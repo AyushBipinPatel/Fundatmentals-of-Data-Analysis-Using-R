@@ -43,7 +43,7 @@ Dr Saswata has graciously prepared two documents that detail the logistics and s
 
 Hi, I am Ayush. I am a [RStudio Certified Tidyverse Instructor](https://education.rstudio.com/trainers/people/patel+ayush/). I enjoy teaching data analysis skills using R (doing this also helps me keep pace with new developments in R).
 
-I have received formal training in Engineering and Economics. My work is focused on understand the process of development and my interests are in rights based laws, poverty measurement, all things data and public policy. 
+I have received formal training in Engineering and Economics. My work is focused on understanding the process of development and my interests are in rights based laws, poverty measurement, all things data and public policy. 
 
 ### Reach me 
 
