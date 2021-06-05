@@ -104,7 +104,7 @@ You have __some experience in working with data__. _You need not necessarily kno
 
 
 
-You want to __learn how to use R for data analysis and research.__ _Knowing how to use programming language is not a required_
+You want to __learn how to use R for data analysis and research.__ _Knowing how to use programming language is not required_
 <br>
 
 
