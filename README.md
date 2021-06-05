@@ -27,6 +27,8 @@ The RStudio cloud behaves in the same way (almost) as if you were using R throug
 
 All links to lecture slides will be uploaded here a day prior to the lecture, or latest on the day before the lecture.
 
+__[Link to Slides for lecture 1 ](/lecture1.html)__
+
 ## Other Important Documents
 
 Dr Saswata has graciously prepared two documents that detail the logistics and schedule of this workshop. Links to both documents are below.
