@@ -153,7 +153,7 @@ Login (using google or other email) or signup
 ]
 
 .right-column[
-<img src = "images/email-cloud.png">
+<img src = "images/email-cloud.PNG">
 ]
 
 ---
@@ -195,7 +195,7 @@ If not, stop me.
 ]
 
 .right-column[
-<img src = "images/inside-project.png">
+<img src = "images/inside-project.PNG">
 ]
 
 ---
