@@ -41,7 +41,7 @@ background-image: url(https://images.metmuseum.org/CRDImages/rl/original/DP35901
 background-size: cover
 
 
-# Introduction to R -COntinued
+# Introduction to R -Continued
 
 <img src="https://www.r-project.org/logo/Rlogo.png" width="150px"/>
 
@@ -242,15 +242,14 @@ background-size: cover
 ## Your Turn 1
 
 .left[
-.big[
 
-Go to the project `Your Turn - Lecture 1`
 
-Open a file named `exercise for lecture 1.Rmd`
+Go to the project `Your Turn - Lecture 2`
+
+Open a file named `exercise for lecture 2.Rmd`
 
 Read the instructions and complete the exercise `Your Trun 1`
 
-]
 ]
 
 ```{r echo=FALSE}
@@ -259,6 +258,257 @@ countdown(minutes = 5)
 
 .small[
 [Background Image: The Chess Players by Thomas Eakins](https://images.metmuseum.org/CRDImages/ad/original/DT1506.jpg)
+]
+---
+
+class: top, left
+
+## Functions - the essentials
+
+.yscroll[
+.panelset[
+
+.panel[.panel-name[What?]
+
+A function is also an object. 
+
+Every function has a name
+
+A function is sequence of commands.
+
+A functions requires inputs and using the given inputs, it provides output.
+
+]
+
+.panel[.panel-name[How to use]
+
+```{r fun_ex, include=FALSE}
+c(1,2,3,5.5,7,5,2,3,NA) -> a
+
+c("ayush","dobby","Gimli") -> b
+
+list(a,b) -> store_list
+
+length(a)
+
+length(store_list)
+```
+
+```{r echo=FALSE}
+decorate("fun_ex") %>% 
+  flair_funs() %>% 
+  flair_rx(pattern = "(?<=\\().+(?=\\))",
+        background = "LIghtCyan") %>%
+  flair("(", color = "Crimson") %>% 
+  flair(")", color = "Crimson") %>% 
+  flair(",", color = "Crimson") %>% 
+  knit_print.with_flair()
+```
+
+
+]
+
+.panel[.panel-name[Essential functions]
+
+### Length
+
+```{r}
+length(a)
+
+length(b)
+```
+
+### Unique
+
+```{r}
+unique(b)
+```
+
+
+### Mean/Median
+
+```{r}
+mean(a)
+
+mean(a, na.rm = T)
+
+median(a, na.rm = T)
+```
+
+### Sum
+
+```{r}
+sum(a)
+
+sum(a, na.rm = TRUE)
+```
+
+### Ifelse
+
+```{r}
+ifelse(
+  a > 3,
+  "Greater than 3",
+  "Not Greater than 3"
+)
+
+ifelse(
+  a > 3,
+  a - 1,
+  a*0
+)
+```
+
+### names
+
+```{r}
+names(penguins)
+```
+
+### View
+
+```{r eval=FALSE}
+View(penguins)
+```
+
+```{r echo=FALSE}
+penguins %>%
+knitr::kable()%>%
+kableExtra::kable_styling()%>%
+scroll_box(width = "100%", height = "400px")
+
+```
+
+### dim
+
+```{r}
+dim(penguins)
+```
+
+
+<br>
+
+<br>
+<br>
+
+]
+
+]
+]
+---
+
+class: inverse, center, middle
+
+background-image: url(https://images.metmuseum.org/CRDImages/ad/original/DT1506.jpg)
+
+background-size: cover
+
+## `r icon_style(icons::fontawesome("keyboard"),scale = 3,fill = "white")`
+
+## Your Turn 2
+
+.left[
+
+
+Go to the project `Your Turn - Lecture 2`
+
+Open a file named `exercise for lecture 2.Rmd`
+
+Read the instructions and complete the exercise `Your Trun 2`
+
+]
+
+```{r echo=FALSE}
+countdown(minutes = 10)
+```
+
+.small[
+[Background Image: The Chess Players by Thomas Eakins](https://images.metmuseum.org/CRDImages/ad/original/DT1506.jpg)
+]
+---
+
+### Importing and Exporting csv file
+
+.yscroll[
+
+.panelset[
+
+.panel[.panel-name[Address of a file]
+
+The location of a file is referred to as address
+
+In order to import data to R from computer or in order to export data from R o computer we need the exact location of where there file has to be read from or saved to.
+
+For example: 
+
+The slides you are looking at now are store in my computer at
+
+>D:/R projects/Fundatmentals-of-Data-Analysis-Using-R/lecture2.Rmd
+
+<br>
+
+]
+
+.panel[.panel-name[Importing a csv]
+
+function: `read_csv()`
+
+required input: address of the file
+
+```{r}
+read_csv(file = "D:/R projects/Fundatmentals-of-Data-Analysis-Using-R/data/survey_response.csv") -> data_survey
+```
+
+```{r include=FALSE}
+c(
+  "time_response","user_name","age_years",
+           "gender","hh_num","height_cm","weight_kg",
+           "prefrence_entertainment","play_mobilegame",
+           "mobile_game_addict", "price_mobile",
+           "brand_mobile","recharge_internet",
+           "e_vaccine_hh_num", "satisfaction_cg",
+           "activity_pandemic_over", "prefer_online_class",
+           "preference_food_type", "preference_dish",
+           "budget_dinner") -> colnames(data_survey)
+```
+
+
+```{r eval=FALSE}
+View(data_survey)
+```
+
+```{r echo=FALSE}
+data_survey %>%
+knitr::kable()%>%
+kableExtra::kable_styling()%>%
+scroll_box(width = "100%", height = "400px")
+
+```
+
+<br>
+
+<br>
+
+
+]
+
+.panel[.panel-name[Exporting as csv]
+
+```{r}
+data_survey[c(1:25),c(5,7,12)] -> data_subset
+```
+
+
+```{r}
+write_csv(data_subset, 
+          "D:/R projects/Fundatmentals-of-Data-Analysis-Using-R/data/survey_response_subset.csv")
+```
+
+
+]
+
+]
+
 ]
 
 ---
