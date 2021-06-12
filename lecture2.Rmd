@@ -1,6 +1,6 @@
 ---
 title: "Introduction to R - continued"
-subtitle: "Lecture 1"
+subtitle: "Lecture 2"
 author: "Ayush Patel"
 institute: "Department of Economics, Kanchrapara College"
 date: "`r Sys.Date()`"
