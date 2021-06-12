@@ -1,0 +1,287 @@
+timestamp,age_y,gender,fam_members,height_cm,weight_kg,prefrence_entertainment,play_mobile_games,mobile_game_addict,price_mobile,brand_mobile,cost_last_internet_package,fam_mem_eligible_vaccinated,satisfaction_central_gov,what_first_after_pandemic,online_class_after_pandemic,prefrence_food,prefrence_dish,cost_dinner_outing
+2021/05/27 11:05:11 am GMT+5:30,20,Female,8,156.21,55.5,Other,No,I don't play mobile games,NA,Xiaomi,0,5,Neutral,Go for a trip,Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/27 2:40:52 pm GMT+5:30,22,Female,3,167.64,78,Animal Videos,No,No,12000,Samsung,149,0,Very dissatisfied,Other,No,Non-Vegetarian Food,Biryani,100
+2021/05/27 2:47:40 pm GMT+5:30,23,Male,14,177.8,101.5,Web Series,Yes,Maybe,78500,Samsung,401,4,Very dissatisfied,Other,No,Non-Vegetarian Food,Biryani,1000
+2021/05/27 2:53:37 pm GMT+5:30,15,Male,12,167.64,89,Web Series,Yes,Yes,20000,Xiaomi,349,1,Satisfied,Continue to stay at home,Yes,Non-Vegetarian Food,Biryani,5000
+2021/05/27 3:18:22 pm GMT+5:30,18,Male,5,170.688,65,Web Series,Yes,Maybe,32500,Samsung,399,0,Satisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/27 3:23:31 pm GMT+5:30,19,Male,3,182,100,Web Series,Yes,No,20000,Xiaomi,590,0,Neutral,Go out with friends/family (for movies/dinner etc.),Mostly Yes,Non-Vegetarian Food,Biryani,2500
+2021/05/27 4:58:33 pm GMT+5:30,34,Male,5,173,64,Sports Videos,Yes,No,15000,Xiaomi,699,2,Very dissatisfied,Other,Mostly No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,5000
+2021/05/27 5:06:10 pm GMT+5:30,35,Female,4,152.4,55,Movie,No,No,32000,Vivo,198,1,Dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,2000
+2021/05/27 5:10:06 pm GMT+5:30,30,Female,5,166,70,Movie,No,No,19000,Xiaomi,500,4,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1500
+2021/05/27 5:13:49 pm GMT+5:30,34,Male,5,178,70,Children Videos,Yes,No,12000,Xiaomi,599,3,Satisfied,Have a huge family gathering,Mostly No,Non-Vegetarian Food,Fish Curry - Rice,500
+2021/05/27 5:29:42 pm GMT+5:30,33,Female,5,NA,69,Movie,Yes,No,14999,Realme,599,1,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,500
+2021/05/27 5:36:01 pm GMT+5:30,32,Female,5,NA,60,Web Series,No,I don't play mobile games,18000,Samsung,2000,0,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Biryani,1000
+2021/05/27 5:45:57 pm GMT+5:30,33,Female,4,154,55,Movie,No,I don't play mobile games,25000,Asus,1400,0,Very dissatisfied,Go for a trip,No,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,1000
+2021/05/27 5:47:25 pm GMT+5:30,31,Male,2,179,85,Movie,Yes,No,15000,Vivo,300,0,Very dissatisfied,Go for a trip,Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,300
+2021/05/27 5:49:32 pm GMT+5:30,34,Female,5,NA,68,Other,No,No,16500,Other,590,NA,Dissatisfied,Continue to stay at home,Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/27 6:31:16 pm GMT+5:30,33,Female,4,NA,64,Web Series,Yes,Maybe,40000,Other,1000,4,Very dissatisfied,Go for a trip,Yes,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,1500
+2021/05/27 6:39:46 pm GMT+5:30,33,Male,3,173,86,Movie,No,No,9000,Huawei,101,1,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,200
+2021/05/27 6:46:05 pm GMT+5:30,35,Male,7,176,82,Movie,Yes,No,63000,IPhone,499,2,Dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,3000
+2021/05/27 7:32:39 pm GMT+5:30,33,Female,4,154,66,Web Series,No,No,29000,OnePlus,830,1,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,1000
+2021/05/27 9:18:57 pm GMT+5:30,28,Female,4,164,90,Web Series,No,No,19000,Samsung,720,4,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Strictly Vegetarian Food,Biryani,NA
+2021/05/27 9:22:24 pm GMT+5:30,26,Female,4,155,59.6,Web Series,No,No,33500,OnePlus,599,4,Neutral,Go for a trip,Yes,Vegan food,Rajma Chawal,3000
+2021/05/27 9:34:00 pm GMT+5:30,27,Male,5,176,79,Sports Videos,No,Yes,16000,Xiaomi,550,4,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly No,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,500
+2021/05/27 9:38:34 pm GMT+5:30,32,Male,3,172,79,Sports Videos,No,No,70000,IPhone,900,2,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,2000
+2021/05/27 9:42:37 pm GMT+5:30,27,Female,4,164,67,Web Series,No,Maybe,38000,OnePlus,1200,1,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,1500
+2021/05/27 9:45:32 pm GMT+5:30,32,Female,3,163,62,Web Series,Yes,No,30000,OnePlus,500,2,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1000
+2021/05/27 10:10:54 pm GMT+5:30,29,Male,2,195,85,Web Series,No,No,60000,Samsung,1200,1,Very dissatisfied,Go for a trip,Yes,Strictly Vegetarian Food,Noodles,2000
+2021/05/27 10:30:42 pm GMT+5:30,27,Male,6,165,60,Movie,Yes,"Not yet, but could become one sooner",16000,Motorola,470,2,Very dissatisfied,Other,Yes,Non-Vegetarian Food,Biryani,500
+2021/05/27 10:31:51 pm GMT+5:30,24,Female,6,156,60,Other,Yes,No,17000,Xiaomi,1000,4,Satisfied,Go for a trip,Yes,Strictly Vegetarian Food,Other,500
+2021/05/27 11:53:07 pm GMT+5:30,22,Female,3,160.02,64,Movie,No,Yes,54000,IPhone,450,3,Dissatisfied,Go for a trip,Mostly Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1500
+2021/05/28 1:41:18 am GMT+5:30,28,Female,12,162.56,62.5,Web Series,Yes,No,60000,IPhone,500,9,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Strictly Vegetarian Food,Noodles,2500
+2021/05/28 8:48:40 am GMT+5:30,26,Male,6,180,91,Web Series,No,No,35000,IPhone,2200,2,Satisfied,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Fish Curry - Rice,2000
+2021/05/28 9:16:08 am GMT+5:30,21,Male,4,167.64,54,Web Series,No,I don't play mobile games,21000,Samsung,589,0,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/28 9:28:36 am GMT+5:30,16,Female,16,160.57,43,Music Videos,No,I don't play mobile games,15000,Samsung,399,2,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Noodles,1000
+2021/05/28 9:29:08 am GMT+5:30,24,Female,4,157,59,Movie,No,I don't play mobile games,11000,Asus,590,0,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,800
+2021/05/28 9:29:11 am GMT+5:30,23,Female,3,155,66,Music Videos,No,No,15000,Samsung,599,0,Neutral,Have a huge family gathering,Yes,Non-Vegetarian Food,Biryani,1000
+2021/05/28 9:31:00 am GMT+5:30,18,Male,6,164,48,Other,Yes,No,9000,Nokia,399,2,Very satisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 9:32:19 am GMT+5:30,21,Female,7,152.4,69,Movie,Yes,"Not yet, but could become one sooner",17999,Realme,590,3,Satisfied,Go out with friends/family (for movies/dinner etc.),Yes,Non-Vegetarian Food,Biryani,300
+2021/05/28 9:33:10 am GMT+5:30,23,Female,7,NA,62,Web Series,No,No,12000,Xiaomi,555,6,Dissatisfied,Go for a trip,Yes,Non-Vegetarian Food,Biryani,1000
+2021/05/28 9:34:15 am GMT+5:30,19,Female,4,170,70,Music Videos,Yes,No,14000,Asus,599,4,Satisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,300
+2021/05/28 9:36:40 am GMT+5:30,20,Female,7,NA,42,Web Series,Yes,No,17500,Oppo,599,1,Satisfied,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 9:38:47 am GMT+5:30,20,Female,3,169,58,Music Videos,No,No,18499,Xiaomi,199,2,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,500
+2021/05/28 9:44:01 am GMT+5:30,22,Female,8,167,55,Children Videos,Yes,"Not yet, but could become one sooner",14000,Samsung,575,5,Neutral,Go for a trip,Yes,Non-Vegetarian Food,Biryani,200
+2021/05/28 9:44:30 am GMT+5:30,22,Female,4,152,63,Movie,Yes,No,8000,Samsung,770,0,Satisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 9:45:30 am GMT+5:30,20,Male,3,183,84,Movie,Yes,No,13000,Oppo,600,1,Neutral,Continue to stay at home,Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/28 9:46:11 am GMT+5:30,20,Male,4,167,50,Other,No,No,14000,Realme,555,2,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,150
+2021/05/28 9:51:35 am GMT+5:30,21,Female,4,153,65,Music Videos,No,No,10000,Asus,399,0,Neutral,Continue to stay at home,No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,700
+2021/05/28 9:56:23 am GMT+5:30,27,Male,4,170.18,73,Web Series,No,No,18000,Oppo,550,2,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,2000
+2021/05/28 9:59:06 am GMT+5:30,22,Female,3,164.5,56,Other,No,No,NA,Realme,200,1,Dissatisfied,Continue to stay at home,Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/28 10:01:44 am GMT+5:30,21,Female,3,178,57,Movie,No,I don't play mobile games,6500,Xiaomi,580,0,Dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Biryani,500
+2021/05/28 10:10:54 am GMT+5:30,21,Male,4,176,67,Music Videos,No,No,10000,Xiaomi,150,1,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 10:26:53 am GMT+5:30,17,Male,3,NA,59,Music Videos,Yes,No,NA,Realme,599,0,Neutral,Other,No,Non-Vegetarian Food,Biryani,500
+2021/05/28 10:33:14 am GMT+5:30,20,Female,4,171,57,Web Series,"No, but I want to",No,10999,Asus,599,0,Neutral,Continue to stay at home,Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/28 11:28:04 am GMT+5:30,24,Female,4,166,62,Web Series,No,No,32000,OnePlus,2000,2,Very dissatisfied,Go for a trip,No,Gluten-free Food,Fish Curry - Rice,600
+2021/05/28 11:29:16 am GMT+5:30,23,Female,4,157.48,46,Sports Videos,No,I don't play mobile games,12000,Motorola,764,0,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fish Curry - Rice,400
+2021/05/28 11:30:50 am GMT+5:30,21,Male,4,190,100,Sports Videos,Yes,No,16000,Samsung,2599,0,Very dissatisfied,Other,No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,500
+2021/05/28 11:36:10 am GMT+5:30,28,Female,2,165,65,Web Series,Yes,No,16000,Xiaomi,590,1,Neutral,Go for a trip,Yes,Non-Vegetarian Food,Biryani,2000
+2021/05/28 11:39:05 am GMT+5:30,58,Male,6,160,70,Sports Videos,No,No,10500,Samsung,400,5,Dissatisfied,Have a huge family gathering,Mostly No,Non-Vegetarian Food,Fish Curry - Rice,5000
+2021/05/28 11:43:55 am GMT+5:30,13,Male,4,150,40,Movie,Yes,Maybe,12000,Vivo,399,1,Neutral,Go for a trip,No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/28 11:44:56 am GMT+5:30,20,Male,4,170.18,62,Web Series,Yes,No,10000,Samsung,600,0,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,700
+2021/05/28 11:46:59 am GMT+5:30,13,Female,6,190,55,Movie,Yes,No,9000,Vivo,300,3,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,900
+2021/05/28 11:48:41 am GMT+5:30,20,Male,5,177,65,Web Series,Yes,No,8999,Xiaomi,199,2,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,NA
+2021/05/28 11:50:47 am GMT+5:30,23,Female,5,152.4,55,Movie,No,No,NA,Asus,600,1,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 11:55:10 am GMT+5:30,26,Female,4,NA,58,Web Series,No,No,19000,Vivo,350,0,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/28 11:57:13 am GMT+5:30,26,Female,3,158.49,55,Web Series,Yes,No,18000,Samsung,999,0,Dissatisfied,Go for a trip,No,Non-Vegetarian Food,Noodles,500
+2021/05/28 12:03:11 pm GMT+5:30,21,Male,3,156,91,Movie,Yes,No,5500,Xiaomi,600,2,Neutral,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Biryani,200
+2021/05/28 12:04:46 pm GMT+5:30,58,Male,3,172,80,Movie,No,I don't play mobile games,22000,Xiaomi,598,2,Neutral,Go for a trip,No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,500
+2021/05/28 12:06:04 pm GMT+5:30,20,Female,8,152.4,35,Music Videos,No,No,10000,Samsung,500,0,Neutral,Other,Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/28 12:07:14 pm GMT+5:30,22,Female,3,146,45,Movie,No,I don't play mobile games,18699,Xiaomi,598,2,Neutral,Go for a trip,Mostly Yes,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,500
+2021/05/28 12:19:22 pm GMT+5:30,19,Female,7,158,36,Children Videos,"No, but I want to",I don't play mobile games,14999,Other,199,7,Neutral,Go out with friends/family (for movies/dinner etc.),Mostly No,Strictly Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/28 12:36:16 pm GMT+5:30,24,Male,5,175,56,Movie,Yes,No,15000,Samsung,200,4,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/28 1:08:17 pm GMT+5:30,23,Female,5,154,51,Movie,No,I don't play mobile games,10000,Samsung,199,0,Very dissatisfied,Continue to stay at home,No,Non-Vegetarian Food,Fish Curry - Rice,100
+2021/05/28 1:17:02 pm GMT+5:30,22,Male,3,166,57,Movie,No,No,12000,Asus,150,0,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 1:17:24 pm GMT+5:30,21,Female,5,154,48,Other,No,No,10000,Xiaomi,199,0,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,500
+2021/05/28 1:19:25 pm GMT+5:30,35,Male,3,183,72,Web Series,Yes,No,16000,Samsung,399,0,Satisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1200
+2021/05/28 1:23:32 pm GMT+5:30,25,Male,4,164,89,Movie,No,No,NA,Xiaomi,199,0,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 1:28:15 pm GMT+5:30,23,Male,3,NA,65,Sports Videos,No,No,13000,Xiaomi,0,0,Neutral,Other,No,Strictly Vegetarian Food,Other,200
+2021/05/28 1:32:24 pm GMT+5:30,12,Male,4,155,50,Animal Videos,No,No,6000,Xiaomi,580,2,Neutral,Have a huge family gathering,No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/28 1:43:30 pm GMT+5:30,23,Male,8,182.88,65,Other,Yes,Yes,45000,OnePlus,855,2,Neutral,Continue to stay at home,Yes,Non-Vegetarian Food,Other,1000
+2021/05/28 1:52:45 pm GMT+5:30,24,Female,4,NA,75,Music Videos,No,No,8500,Realme,258,3,Very dissatisfied,Other,No,Non-Vegetarian Food,Biryani,500
+2021/05/28 1:59:33 pm GMT+5:30,19,Male,4,170,70,Web Series,No,No,70000,Samsung,830,1,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,2000
+2021/05/28 2:01:27 pm GMT+5:30,25,Male,4,160,69,Movie,No,No,NA,Samsung,159,0,Neutral,Go for a trip,No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 2:02:06 pm GMT+5:30,21,Male,4,180,86,Movie,Yes,No,72000,Samsung,401,1,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,500
+2021/05/28 2:05:24 pm GMT+5:30,22,Female,8,160.02,66,Web Series,No,No,16999,Realme,500,3,Dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,400
+2021/05/28 2:15:15 pm GMT+5:30,22,Female,4,157,58,Movie,No,No,20000,Samsung,690,1,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,500
+2021/05/28 2:18:00 pm GMT+5:30,30,Male,3,185,85,Web Series,No,No,3000,Nokia,600,3,Satisfied,Go for a trip,Yes,Strictly Vegetarian Food,Veg Pulao,500
+2021/05/28 2:22:51 pm GMT+5:30,22,Male,3,178,80,Web Series,Yes,No,5000,Nokia,600,1,Dissatisfied,Go for a trip,Yes,Vegan food,Biryani,50
+2021/05/28 2:22:58 pm GMT+5:30,30,Female,2,172,65,Movie,No,No,17000,Other,199,2,Neutral,Continue to stay at home,Mostly No,Non-Vegetarian Food,Fish Curry - Rice,500
+2021/05/28 2:23:33 pm GMT+5:30,14,Female,4,155,50,Other,No,No,12000,Other,375,3,Neutral,Other,No,Non-Vegetarian Food,Fish Curry - Rice,5000
+2021/05/28 2:48:14 pm GMT+5:30,23,Female,4,142.24,45,Movie,Yes,No,26000,Samsung,550,0,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 2:51:07 pm GMT+5:30,21,Female,3,162,67,Web Series,No,No,17000,Realme,471,2,Very dissatisfied,Have a huge family gathering,No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 3:02:13 pm GMT+5:30,19,Female,4,144.9,50,Web Series,No,No,21000,Motorola,700,2,Neutral,Go for a trip,Mostly Yes,Non-Vegetarian Food,Biryani,1500
+2021/05/28 3:08:34 pm GMT+5:30,22,Male,5,182,98,Web Series,No,No,60000,OnePlus,590,0,Neutral,Go for a trip,Mostly No,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,500
+2021/05/28 3:09:14 pm GMT+5:30,20,Male,3,NA,55,Movie,No,No,7000,Nokia,599,1,Neutral,Other,Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/28 3:17:14 pm GMT+5:30,27,Male,6,163,68,Movie,"No, but I want to",No,35000,Huawei,1500,0,Dissatisfied,Continue to stay at home,Mostly Yes,Non-Vegetarian Food,Biryani,NA
+2021/05/28 3:22:37 pm GMT+5:30,23,Female,7,NA,79,Web Series,No,I don't play mobile games,130000,IPhone,555,0,Neutral,Go for a trip,No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,2000
+2021/05/28 3:27:35 pm GMT+5:30,19,Female,3,NA,40,Music Videos,No,No,NA,Other,249,1,Satisfied,Go for a trip,Mostly Yes,Non-Vegetarian Food,Fish Curry - Rice,NA
+2021/05/28 3:29:25 pm GMT+5:30,24,Male,4,165,67,Web Series,Yes,No,20000,Motorola,700,2,Dissatisfied,Go for a trip,Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/28 3:33:39 pm GMT+5:30,20,Female,2,153,50,Movie,Yes,No,8700,Samsung,199,0,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,200
+2021/05/28 3:41:28 pm GMT+5:30,25,Female,6,NA,53,Children Videos,Yes,I don't play mobile games,27999,Samsung,1000,5,Dissatisfied,Go for a trip,Yes,Non-Vegetarian Food,Biryani,1000
+2021/05/28 3:44:22 pm GMT+5:30,50,Male,2,167,56,Animal Videos,No,I don't play mobile games,14000,Xiaomi,400,2,Satisfied,Have a huge family gathering,Mostly Yes,Non-Vegetarian Food,Fish Curry - Rice,2000
+2021/05/28 3:47:31 pm GMT+5:30,21,Female,4,155,50,Movie,Yes,No,11500,Realme,250,0,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,400
+2021/05/28 3:57:44 pm GMT+5:30,31,Female,4,NA,50,Movie,No,No,10500,Oppo,499,2,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 4:00:57 pm GMT+5:30,22,Male,7,166,65,Short Film,Yes,"Not yet, but could become one sooner",18000,OnePlus,590,0,Neutral,Go for a trip,Yes,Strictly Vegetarian Food,Rajma Chawal,1000
+2021/05/28 4:07:13 pm GMT+5:30,19,Female,3,157,65,Movie,Yes,"Not yet, but could become one sooner",18000,Vivo,250,1,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Fish Curry - Rice,500
+2021/05/28 4:14:25 pm GMT+5:30,21,Male,3,167.64,56,Movie,Yes,Maybe,7200,Samsung,149,0,Dissatisfied,Go for a trip,No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,300
+2021/05/28 4:34:12 pm GMT+5:30,20,Female,4,175,75,Movie,No,No,13000,Other,199,2,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,500
+2021/05/28 5:03:28 pm GMT+5:30,22,Male,7,180,63,Web Series,Yes,Maybe,5999,Realme,599,0,Satisfied,Other,Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/28 5:10:03 pm GMT+5:30,22,Male,4,168,60,Web Series,No,No,14000,Xiaomi,599,2,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/28 5:15:46 pm GMT+5:30,34,Female,4,158,74,Movie,No,No,10500,Motorola,800,3,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fish Curry - Rice,1500
+2021/05/28 5:26:25 pm GMT+5:30,26,Female,3,164.59,45,Movie,No,I don't play mobile games,NA,Xiaomi,499,2,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 5:29:42 pm GMT+5:30,30,Female,3,156,80,Movie,No,I don't play mobile games,40000,IPhone,590,0,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 5:57:34 pm GMT+5:30,55,Male,3,180,65,Animal Videos,No,No,9000,Samsung,145,0,Very dissatisfied,Continue to stay at home,No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,100
+2021/05/28 6:07:24 pm GMT+5:30,28,Female,3,159,62,Web Series,No,No,12000,Other,472,1,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Yes,Non-Vegetarian Food,Biryani,1000
+2021/05/28 6:16:34 pm GMT+5:30,NA,Male,5,NA,86,Sports Videos,No,No,NA,Realme,600,0,Neutral,Continue to stay at home,Yes,Non-Vegetarian Food,Fish Curry - Rice,1500
+2021/05/28 6:20:15 pm GMT+5:30,23,Male,3,NA,59,Web Series,No,No,17500,Xiaomi,500,2,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1200
+2021/05/28 6:41:00 pm GMT+5:30,57,Male,4,177,77,Other,No,No,12000,Xiaomi,375,3,Neutral,Other,No,Non-Vegetarian Food,Fish Curry - Rice,1000
+2021/05/28 6:51:41 pm GMT+5:30,22,Male,16,168,62,Web Series,Yes,"Not yet, but could become one sooner",20000,Realme,699,4,Dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,250
+2021/05/28 7:01:37 pm GMT+5:30,32,Female,9,150,43,Animal Videos,Yes,No,10000,Xiaomi,599,0,Very dissatisfied,Other,No,Non-Vegetarian Food,Biryani,200
+2021/05/28 7:05:50 pm GMT+5:30,37,Female,6,NA,70,Web Series,No,I don't play mobile games,30000,OnePlus,710,1,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/28 7:22:45 pm GMT+5:30,20,Male,7,174,87,Web Series,Yes,No,NA,Xiaomi,800,5,Neutral,Other,Yes,Non-Vegetarian Food,Biryani,600
+2021/05/28 7:39:43 pm GMT+5:30,27,Male,8,NA,63,Music Videos,No,No,NA,Other,435,2,Very dissatisfied,Other,Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,NA
+2021/05/28 7:43:46 pm GMT+5:30,23,Female,2,152.4,45,Movie,No,No,8000,Xiaomi,199,0,Very dissatisfied,Other,No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 8:03:17 pm GMT+5:30,22,Male,3,175,72,Movie,No,No,14999,Realme,399,0,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,300
+2021/05/28 8:04:33 pm GMT+5:30,39,Female,5,NA,67,Web Series,No,No,NA,Samsung,500,0,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,500
+2021/05/28 8:06:25 pm GMT+5:30,29,Male,3,168,86,Web Series,No,I don't play mobile games,15000,Xiaomi,767,2,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),Yes,Strictly Vegetarian Food,Biryani,700
+2021/05/28 8:15:32 pm GMT+5:30,56,Male,3,180,76,Music Videos,No,No,7500,Motorola,400,2,Very dissatisfied,Continue to stay at home,Yes,Gluten-free Food,Fish Curry - Rice,300
+2021/05/28 8:30:28 pm GMT+5:30,27,Female,3,166,70,Music Videos,Yes,No,12000,Samsung,150,1,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,500
+2021/05/28 8:34:31 pm GMT+5:30,24,Male,4,170,55,Web Series,No,I don't play mobile games,10000,Huawei,500,2,Neutral,Go for a trip,No,Strictly Vegetarian Food,Rajma Chawal,500
+2021/05/28 8:53:45 pm GMT+5:30,26,Female,3,170,65,Web Series,Yes,No,21000,Samsung,599,2,Dissatisfied,Other,Yes,Non-Vegetarian Food,Biryani,500
+2021/05/28 8:56:09 pm GMT+5:30,25,Female,4,NA,46,Other,No,No,10500,Xiaomi,499,2,Satisfied,Continue to stay at home,No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/28 8:56:27 pm GMT+5:30,NA,Male,8,171,62,Web Series,Yes,Yes,16000,Samsung,500,4,Dissatisfied,Go for a trip,Yes,Non-Vegetarian Food,Biryani,2500
+2021/05/28 9:00:24 pm GMT+5:30,19,Female,3,160,57,Movie,No,No,10200,Realme,399,2,Neutral,Go for a trip,No,Non-Vegetarian Food,Biryani,500
+2021/05/28 9:05:35 pm GMT+5:30,24,Male,8,170,60,Short Film,"No, but I want to",Yes,12000,Samsung,250,NA,Dissatisfied,Have a huge family gathering,Mostly No,Strictly Vegetarian Food,Fried Rice - Chilly Chicken Combo,600
+2021/05/28 9:11:41 pm GMT+5:30,54,Male,9,167.5,71,Movie,No,I don't play mobile games,12500,Samsung,555,7,Very dissatisfied,Continue to stay at home,No,Non-Vegetarian Food,Biryani,8000
+2021/05/28 9:15:56 pm GMT+5:30,24,Male,3,182,60,Other,Yes,No,18000,Nokia,350,0,Satisfied,Continue to stay at home,No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,1000
+2021/05/28 9:16:34 pm GMT+5:30,28,Male,4,170,65,Short Film,Yes,No,31000,Realme,650,2,Neutral,Go for a trip,Mostly No,Non-Vegetarian Food,Other,500
+2021/05/28 9:20:09 pm GMT+5:30,26,Female,3,162,67,Movie,No,No,9000,Other,219,2,Neutral,Go for a trip,Mostly Yes,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,2000
+2021/05/28 9:21:20 pm GMT+5:30,16,Female,3,NA,42,Web Series,Yes,Maybe,NA,Vivo,599,NA,Neutral,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/28 9:27:58 pm GMT+5:30,26,Male,4,166,62,Web Series,Yes,No,12000,Xiaomi,436,4,Very dissatisfied,Go for a trip,Yes,Non-Vegetarian Food,Biryani,1000
+2021/05/28 9:27:59 pm GMT+5:30,21,Female,5,165,70,Web Series,No,I don't play mobile games,9000,Other,300,2,Neutral,Have a huge family gathering,Mostly No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,500
+2021/05/28 9:28:20 pm GMT+5:30,23,Female,5,160,65,Web Series,No,No,14000,Nokia,540,3,Dissatisfied,Continue to stay at home,No,Non-Vegetarian Food,Biryani,300
+2021/05/28 9:56:22 pm GMT+5:30,30,Female,5,149.86,59,Movie,No,No,23000,Oppo,699,1,Satisfied,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Biryani,800
+2021/05/28 10:07:04 pm GMT+5:30,24,Female,5,156,64,Movie,No,No,4325,Asus,499,2,Neutral,Go for a trip,Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/28 10:14:58 pm GMT+5:30,25,Female,3,NA,78,Web Series,Yes,Maybe,25000,Vivo,500,2,Neutral,Go for a trip,Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,400
+2021/05/28 10:22:13 pm GMT+5:30,21,Male,4,NA,52,Movie,Yes,No,12000,Samsung,700,0,Neutral,Go for a trip,Yes,Non-Vegetarian Food,Biryani,500
+2021/05/28 10:24:19 pm GMT+5:30,25,Female,5,155,60,Movie,No,I don't play mobile games,7000,Xiaomi,199,3,Neutral,Continue to stay at home,No,Non-Vegetarian Food,Fish Curry - Rice,500
+2021/05/28 10:26:25 pm GMT+5:30,18,Male,4,NA,85,Other,Yes,No,16000,Xiaomi,570,1,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Biryani,400
+2021/05/28 10:28:46 pm GMT+5:30,17,Male,4,174,63,Web Series,Yes,Yes,14000,Other,150,1,Very satisfied,Go out with friends/family (for movies/dinner etc.),Yes,Non-Vegetarian Food,Biryani,300
+2021/05/28 10:28:48 pm GMT+5:30,20,Male,3,163,56,Animal Videos,No,I don't play mobile games,10000,Samsung,399,1,Dissatisfied,Other,Mostly No,Non-Vegetarian Food,Biryani,500
+2021/05/28 10:30:38 pm GMT+5:30,22,Male,4,175,52,Music Videos,Yes,Maybe,15000,Xiaomi,590,2,Satisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 10:32:19 pm GMT+5:30,26,Male,4,170,65,Web Series,Yes,No,14000,Realme,500,2,Very satisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1500
+2021/05/28 10:33:05 pm GMT+5:30,24,Female,7,NA,39,Movie,No,No,11999,Xiaomi,199,4,Dissatisfied,Other,No,Non-Vegetarian Food,Other,NA
+2021/05/28 10:38:47 pm GMT+5:30,25,Male,3,NA,60,Music Videos,No,No,10000,Xiaomi,149,2,Satisfied,Continue to stay at home,Yes,Non-Vegetarian Food,Biryani,300
+2021/05/28 10:39:16 pm GMT+5:30,19,Male,10,NA,NA,Other,Yes,No,13000,Realme,409,4,Satisfied,Continue to stay at home,Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,250
+2021/05/28 10:41:39 pm GMT+5:30,20,Female,4,154,42,Music Videos,No,I don't play mobile games,12000,Realme,555,0,Very satisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 10:46:08 pm GMT+5:30,29,Male,2,NA,67,Sports Videos,No,No,12000,Samsung,300,0,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,500
+2021/05/28 10:47:43 pm GMT+5:30,47,Female,4,154,63,Children Videos,No,No,8000,Asus,590,2,Satisfied,Have a huge family gathering,No,Strictly Vegetarian Food,Fried Rice - Chilly Chicken Combo,1500
+2021/05/28 10:51:45 pm GMT+5:30,54,Male,4,170,81,Sports Videos,No,No,9500,Realme,400,2,Satisfied,Have a huge family gathering,No,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,1000
+2021/05/28 10:54:33 pm GMT+5:30,21,Female,3,NA,62,Music Videos,No,No,14000,Xiaomi,199,0,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,NA
+2021/05/28 11:02:08 pm GMT+5:30,22,Male,4,168,88,Movie,Yes,No,12000,Xiaomi,699,2,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),Yes,Non-Vegetarian Food,Biryani,500
+2021/05/28 11:16:49 pm GMT+5:30,23,Male,3,163,72,Movie,Yes,No,9000,Realme,249,2,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1000
+2021/05/28 11:40:04 pm GMT+5:30,23,Female,4,172,45,Movie,No,I don't play mobile games,10000,Xiaomi,648,2,Satisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fish Curry - Rice,1000
+2021/05/28 11:40:14 pm GMT+5:30,51,Male,4,NA,71,Sports Videos,No,No,39000,IPhone,583,3,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Yes,Non-Vegetarian Food,Noodles,2000
+2021/05/28 11:40:30 pm GMT+5:30,47,Female,4,NA,61,Animal Videos,No,I don't play mobile games,18000,Samsung,100,3,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/28 11:44:19 pm GMT+5:30,14,Female,4,160,53,Web Series,No,I don't play mobile games,NA,Samsung,583,3,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,NA
+2021/05/29 12:06:24 am GMT+5:30,19,Male,4,170,90,Web Series,No,Maybe,10000,Xiaomi,590,2,Neutral,Other,No,Non-Vegetarian Food,Biryani,1000
+2021/05/29 12:33:58 am GMT+5:30,30,Male,7,174,68,Movie,Yes,Yes,45000,Samsung,500,4,Dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Fish Curry - Rice,1000
+2021/05/29 5:35:04 am GMT+5:30,17,Male,5,172,75,Sports Videos,No,Maybe,13999,Realme,599,2,Satisfied,Continue to stay at home,Yes,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,500
+2021/05/29 8:38:31 am GMT+5:30,17,Female,10,174,69,Web Series,No,No,11000,Samsung,599,6,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,700
+2021/05/29 8:52:52 am GMT+5:30,25,Female,2,NA,50,Web Series,"No, but I want to",No,27000,Vivo,599,2,Neutral,Go out with friends/family (for movies/dinner etc.),Yes,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,5000
+2021/05/29 9:42:45 am GMT+5:30,75,Female,3,147,36,Music Videos,No,No,13000,Vivo,450,3,Dissatisfied,Have a huge family gathering,No,Non-Vegetarian Food,Fish Curry - Rice,25003
+2021/05/29 9:59:26 am GMT+5:30,27,Female,4,167.64,65,Short Film,Yes,No,38000,OnePlus,599,3,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,1000
+2021/05/29 10:05:38 am GMT+5:30,18,Male,9,175,90,Other,Yes,No,23000,Xiaomi,1700,6,Dissatisfied,Go for a trip,Yes,Non-Vegetarian Food,Biryani,1200
+2021/05/29 10:06:06 am GMT+5:30,26,Female,4,155.44,48,Music Videos,Yes,Maybe,20000,Other,555,4,Dissatisfied,Other,Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/29 10:15:58 am GMT+5:30,29,Female,3,171,90,Web Series,Yes,No,35000,OnePlus,499,3,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1000
+2021/05/29 10:16:27 am GMT+5:30,29,Female,6,170,62,Web Series,"No, but I want to",No,11000,Xiaomi,499,6,Satisfied,Go for a trip,Mostly No,Gluten-free Food,Veg Pulao,3000
+2021/05/29 10:30:03 am GMT+5:30,34,Male,5,173,79,Web Series,No,No,15000,Samsung,555,4,Very satisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,700
+2021/05/29 10:50:32 am GMT+5:30,30,Female,4,160,58,Movie,No,No,15000,Samsung,590,0,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,1500
+2021/05/29 10:51:09 am GMT+5:30,26,Female,4,165,60,Web Series,No,I don't play mobile games,30000,OnePlus,482,3,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Noodles,1500
+2021/05/29 11:03:46 am GMT+5:30,28,Male,4,160,65,Movie,No,No,15000,Motorola,800,2,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Biryani,1000
+2021/05/29 11:12:20 am GMT+5:30,30,Male,3,176,70,Movie,Yes,No,39000,OnePlus,598,1,Very dissatisfied,Continue to stay at home,Mostly No,Non-Vegetarian Food,Biryani,500
+2021/05/29 11:24:35 am GMT+5:30,26,Female,4,156,75,Movie,No,No,9000,Xiaomi,444,1,Neutral,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Biryani,1000
+2021/05/29 11:45:33 am GMT+5:30,22,Male,4,182,70,Movie,No,No,11000,Xiaomi,599,1,Satisfied,Continue to stay at home,No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,1000
+2021/05/29 11:48:27 am GMT+5:30,22,Male,5,177.8,74,Sports Videos,No,No,21000,Vivo,590,0,Dissatisfied,Other,No,Non-Vegetarian Food,Fish Curry - Rice,5000
+2021/05/29 11:51:34 am GMT+5:30,23,Male,NA,NA,53,Sports Videos,Yes,No,NA,Vivo,199,2,Satisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/29 11:53:18 am GMT+5:30,19,Female,3,158,82,Web Series,Yes,No,18250,Samsung,199,1,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,300
+2021/05/29 11:58:13 am GMT+5:30,21,Male,NA,NA,58,Movie,Yes,Yes,12000,Asus,149,NA,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Biryani,NA
+2021/05/29 12:21:00 pm GMT+5:30,19,Female,3,157.48,60,Other,No,I don't play mobile games,NA,Samsung,550,2,Dissatisfied,Go for a trip,Mostly Yes,Non-Vegetarian Food,Other,300
+2021/05/29 12:22:06 pm GMT+5:30,21,Male,3,171,70,Web Series,Yes,No,15000,Xiaomi,590,0,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,700
+2021/05/29 12:29:43 pm GMT+5:30,24,Male,3,175.26,75,Web Series,Yes,No,15000,Samsung,800,3,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly Yes,Non-Vegetarian Food,Other,1500
+2021/05/29 2:41:59 pm GMT+5:30,50,Female,2,158.5,60,Movie,No,No,13000,Vivo,149,0,Very dissatisfied,Other,No,Non-Vegetarian Food,Biryani,1000
+2021/05/29 3:20:04 pm GMT+5:30,25,Female,2,NA,59,Web Series,No,I don't play mobile games,15000,Samsung,600,3,Neutral,Go for a trip,Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/29 3:27:42 pm GMT+5:30,18,Male,3,158,56,Sports Videos,Yes,No,64000,IPhone,801,2,Neutral,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Biryani,3000
+2021/05/29 5:03:26 pm GMT+5:30,28,Female,4,153,56,Movie,No,No,12000,Realme,598,4,Satisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,500
+2021/05/29 5:09:59 pm GMT+5:30,24,Male,5,179,100,Movie,Yes,No,15000,Other,670,2,Satisfied,Go out with friends/family (for movies/dinner etc.),Mostly Yes,Non-Vegetarian Food,Biryani,400
+2021/05/29 5:41:19 pm GMT+5:30,20,Female,4,NA,55,Music Videos,No,I don't play mobile games,1200,Xiaomi,200,1,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/29 6:55:01 pm GMT+5:30,52,Female,4,162,78,Movie,No,No,22000,Samsung,375,3,Neutral,Other,No,Non-Vegetarian Food,Fish Curry - Rice,500
+2021/05/29 7:03:37 pm GMT+5:30,22,Female,7,167,84,Music Videos,No,No,12000,Samsung,449,5,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,2000
+2021/05/29 7:11:50 pm GMT+5:30,27,Female,4,163,66,Web Series,No,No,20000,Samsung,149,4,Satisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,1000
+2021/05/29 7:31:18 pm GMT+5:30,20,Female,4,156,57,Movie,Yes,No,18000,Samsung,599,3,Neutral,Other,No,Non-Vegetarian Food,Biryani,1000
+2021/05/29 7:34:45 pm GMT+5:30,26,Female,5,172,57,Web Series,No,No,66000,IPhone,590,4,Neutral,Go for a trip,No,Non-Vegetarian Food,Noodles,500
+2021/05/29 7:40:59 pm GMT+5:30,21,Female,5,152,72,Animal Videos,Yes,"Not yet, but could become one sooner",16000,Xiaomi,500,2,Satisfied,Have a huge family gathering,No,Non-Vegetarian Food,Biryani,1000
+2021/05/29 7:42:03 pm GMT+5:30,29,Male,3,165,68,Web Series,No,No,18000,Samsung,660,1,Satisfied,Go out with friends/family (for movies/dinner etc.),No,Vegan food,Rajma Chawal,3000
+2021/05/29 7:47:26 pm GMT+5:30,27,Female,5,163,68,Web Series,No,No,18000,Samsung,399,2,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fish Curry - Rice,700
+2021/05/29 7:47:28 pm GMT+5:30,27,Female,5,150,80,Web Series,No,No,15000,Xiaomi,219,3,Very dissatisfied,Go for a trip,Mostly Yes,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,1000
+2021/05/29 7:51:36 pm GMT+5:30,29,Female,6,161,60,Movie,No,Yes,15000,Oppo,249,1,Very dissatisfied,Go for a trip,Yes,Non-Vegetarian Food,Biryani,1500
+2021/05/29 8:12:11 pm GMT+5:30,24,Male,8,172,70,Web Series,No,I don't play mobile games,17000,Nokia,600,2,Dissatisfied,Other,Mostly No,Non-Vegetarian Food,Fish Curry - Rice,1000
+2021/05/29 8:17:53 pm GMT+5:30,28,Female,8,NA,55,Movie,No,I don't play mobile games,25000,Other,500,8,Satisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,2000
+2021/05/29 8:24:11 pm GMT+5:30,29,Female,8,NA,75,Other,No,Maybe,1200,Xiaomi,125,4,Very satisfied,Go for a trip,Yes,Non-Vegetarian Food,Biryani,100
+2021/05/29 8:38:09 pm GMT+5:30,27,Female,3,165,69,Web Series,No,No,NA,Asus,151,3,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,500
+2021/05/29 9:22:11 pm GMT+5:30,20,Male,8,164.5,63,Web Series,Yes,Maybe,16000,Motorola,590,4,Dissatisfied,Go for a trip,Mostly Yes,Non-Vegetarian Food,Biryani,500
+2021/05/29 9:27:46 pm GMT+5:30,28,Male,2,165,60,Other,Yes,No,10000,Vivo,1100,2,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1500
+2021/05/29 9:45:24 pm GMT+5:30,19,Male,4,177,68,Sports Videos,No,I don't play mobile games,10000,Other,300,2,Neutral,Continue to stay at home,Mostly No,Non-Vegetarian Food,Biryani,200
+2021/05/29 9:48:36 pm GMT+5:30,28,Male,5,171,69,Movie,No,No,11000,Xiaomi,379,2,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/29 10:17:10 pm GMT+5:30,32,Female,2,167.6,69,Web Series,Yes,No,14000,Xiaomi,700,2,Dissatisfied,Go for a trip,Mostly Yes,Non-Vegetarian Food,Biryani,1500
+2021/05/29 10:38:26 pm GMT+5:30,31,Male,4,165,65,Music Videos,"No, but I want to",No,23000,Xiaomi,599,2,Neutral,Have a huge family gathering,Mostly No,Non-Vegetarian Food,Biryani,2000
+2021/05/29 10:47:14 pm GMT+5:30,67,Male,2,NA,74,Movie,Yes,No,10000,Other,650,2,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,1000
+2021/05/29 10:55:52 pm GMT+5:30,57,Female,2,157,68,Short Film,Yes,Yes,8000,Other,650,2,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Fish Curry - Rice,NA
+2021/05/30 12:11:00 am GMT+5:30,18,Female,10,165,67,Web Series,Yes,No,17000,Samsung,499,5,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,500
+2021/05/30 9:53:15 am GMT+5:30,59,Male,4,170,70,Sports Videos,No,No,15000,Other,500,2,Dissatisfied,Have a huge family gathering,Mostly No,Non-Vegetarian Food,Fish Curry - Rice,200
+2021/05/30 10:47:46 am GMT+5:30,26,Female,6,160,65,Movie,No,No,10000,Nokia,499,1,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Other,1000
+2021/05/30 11:40:10 am GMT+5:30,38,Female,5,150,52,Music Videos,"No, but I want to",No,12000,Samsung,8457,0,Dissatisfied,Continue to stay at home,No,Non-Vegetarian Food,Biryani,500
+2021/05/30 12:39:03 pm GMT+5:30,29,Male,4,176,68,Movie,Yes,No,10000,Xiaomi,395,3,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Biryani,1000
+2021/05/30 12:42:17 pm GMT+5:30,25,Female,3,160,80,Web Series,"No, but I want to",No,17000,Samsung,800,2,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Biryani,800
+2021/05/30 12:53:41 pm GMT+5:30,29,Female,5,155,58,Web Series,No,No,7000,Xiaomi,600,1,Very dissatisfied,Go for a trip,Mostly Yes,Non-Vegetarian Food,Biryani,1000
+2021/05/30 1:11:11 pm GMT+5:30,30,Male,4,156,80,Animal Videos,No,I don't play mobile games,13000,Motorola,670,0,Very dissatisfied,Go for a trip,Mostly Yes,Non-Vegetarian Food,Other,600
+2021/05/30 1:46:09 pm GMT+5:30,39,Female,1,152,52,Web Series,Yes,No,15000,Asus,500,2,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Fish Curry - Rice,2000
+2021/05/30 1:47:19 pm GMT+5:30,23,Male,4,162,55,Movie,No,I don't play mobile games,8000,Xiaomi,555,2,Dissatisfied,Other,Mostly Yes,Non-Vegetarian Food,Other,240
+2021/05/30 2:54:32 pm GMT+5:30,22,Male,2,166,72,Other,No,No,8000,Samsung,900,1,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Biryani,500
+2021/05/30 2:55:20 pm GMT+5:30,NA,Female,16,NA,58,Web Series,No,No,NA,Realme,555,10,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/30 2:56:11 pm GMT+5:30,28,Female,3,160,65,Web Series,Yes,No,9850,Nokia,349,0,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Biryani,700
+2021/05/30 2:57:25 pm GMT+5:30,23,Male,4,173.736,102,Movie,Yes,No,14000,Samsung,89,0,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Biryani,100
+2021/05/30 2:59:48 pm GMT+5:30,23,Female,3,170,75,Web Series,No,Yes,8000,Xiaomi,399,1,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,500
+2021/05/30 3:07:16 pm GMT+5:30,35,Female,3,14852,54,Movie,No,No,25000,Samsung,780,0,Neutral,Go for a trip,Yes,Non-Vegetarian Food,Biryani,1000
+2021/05/30 3:07:19 pm GMT+5:30,22,Female,6,NA,48.5,Music Videos,No,I don't play mobile games,16500,Other,540,2,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Yes,Non-Vegetarian Food,Biryani,5000
+2021/05/30 3:08:13 pm GMT+5:30,NA,Female,4,157.48,48,Other,Yes,No,12500,Oppo,199,2,Satisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,500
+2021/05/30 3:19:28 pm GMT+5:30,21,Male,3,170,90,Web Series,No,No,15000,Xiaomi,444,1,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,NA
+2021/05/30 3:22:09 pm GMT+5:30,20,Female,3,160,65,Movie,Yes,No,10500,Samsung,449,0,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,700
+2021/05/30 3:22:29 pm GMT+5:30,20,Female,5,165.1,75,Other,No,No,11700,Vivo,98,3,Very dissatisfied,Other,No,Non-Vegetarian Food,Biryani,200
+2021/05/30 3:46:39 pm GMT+5:30,22,Female,3,162,79,Web Series,Yes,No,22000,Oppo,500,1,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Yes,Non-Vegetarian Food,Biryani,1500
+2021/05/30 4:14:59 pm GMT+5:30,22,Male,6,172,70,Web Series,No,I don't play mobile games,15000,Asus,588,6,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,500
+2021/05/30 5:13:43 pm GMT+5:30,32,Female,2,150,48,Music Videos,No,No,65000,Samsung,500,0,Dissatisfied,Other,Yes,Non-Vegetarian Food,Fish Curry - Rice,2000
+2021/05/30 5:46:57 pm GMT+5:30,23,Female,4,154,50,Sports Videos,Yes,No,10000,Samsung,1120,0,Dissatisfied,Continue to stay at home,Mostly Yes,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,500
+2021/05/30 6:25:47 pm GMT+5:30,37,Female,5,152,50,Animal Videos,No,I don't play mobile games,12000,Samsung,8,0,Dissatisfied,Continue to stay at home,No,Non-Vegetarian Food,Biryani,500
+2021/05/30 6:26:32 pm GMT+5:30,29,Female,3,157.5,60,Web Series,No,Yes,10000,Motorola,599,0,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,300
+2021/05/30 6:31:52 pm GMT+5:30,27,Male,4,167,73,Movie,Yes,No,15500,Xiaomi,450,3,Dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Fish Curry - Rice,1500
+2021/05/30 6:32:40 pm GMT+5:30,45,Female,2,167,68,Web Series,Yes,Maybe,15000,Samsung,472,2,Very dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Other,4000
+2021/05/30 6:33:30 pm GMT+5:30,26,Female,4,155,53,Movie,Yes,No,17000,Vivo,399,3,Satisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Other,1000
+2021/05/30 6:35:28 pm GMT+5:30,26,Female,3,153,48,Web Series,"No, but I want to",No,8500,Xiaomi,600,0,Dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly Yes,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,1000
+2021/05/30 6:39:20 pm GMT+5:30,27,Male,4,180,90,Movie,No,No,34000,Other,748,2,Dissatisfied,Other,No,Non-Vegetarian Food,Other,NA
+2021/05/30 6:46:22 pm GMT+5:30,26,Female,4,164,70,Web Series,No,I don't play mobile games,15000,Nokia,499,2,Satisfied,Continue to stay at home,No,Non-Vegetarian Food,Biryani,NA
+2021/05/30 6:52:47 pm GMT+5:30,27,Female,4,163,78,Movie,No,I don't play mobile games,16000,Other,750,2,Satisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Fried Rice - Chilly Chicken Combo,300
+2021/05/30 6:52:52 pm GMT+5:30,24,Female,5,125.273,40,Web Series,Yes,No,14500,Xiaomi,1299,0,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),Yes,Non-Vegetarian Food,Biryani,1000
+2021/05/30 6:55:43 pm GMT+5:30,21,Female,3,157.48,51.5,Web Series,Yes,Maybe,21000,Oppo,470,1,Very dissatisfied,Go for a trip,Mostly Yes,Non-Vegetarian Food,Noodles,300
+2021/05/30 6:58:55 pm GMT+5:30,23,Female,6,NA,55,Other,Yes,Maybe,19990,Samsung,590,2,Neutral,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Biryani,500
+2021/05/30 7:36:18 pm GMT+5:30,26,Female,3,155,75,Other,Yes,Maybe,14000,Samsung,1299,2,Dissatisfied,Go for a trip,Mostly No,Non-Vegetarian Food,Other,500
+2021/05/30 7:38:13 pm GMT+5:30,26,Male,3,166,75,Movie,No,No,9999,Xiaomi,840,2,Very dissatisfied,Continue to stay at home,Yes,Non-Vegetarian Food,Biryani,1000
+2021/05/30 8:01:12 pm GMT+5:30,21,Female,4,154,47,Other,No,I don't play mobile games,40000,IPhone,800,0,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,800
+2021/05/30 8:04:36 pm GMT+5:30,25,Female,4,168,71,Short Film,No,No,10000,Nokia,600,2,Dissatisfied,Continue to stay at home,Yes,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,1000
+2021/05/30 8:10:38 pm GMT+5:30,25,Male,21,NA,65,Web Series,No,No,22000,Samsung,599,10,Dissatisfied,Go for a trip,Mostly No,Strictly Vegetarian Food,Veg Pulao,1000
+2021/05/30 8:18:22 pm GMT+5:30,22,Female,3,155,56,Web Series,Yes,Maybe,15000,Xiaomi,588,2,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,1500
+2021/05/30 8:31:27 pm GMT+5:30,25,Female,3,162,50,Other,No,No,9000,Other,345,3,Very dissatisfied,Continue to stay at home,No,Strictly Vegetarian Food,Fish Curry - Rice,500
+2021/05/30 8:43:09 pm GMT+5:30,28,Female,6,157.5,53,Music Videos,Yes,No,29000,OnePlus,449,0,Dissatisfied,Have a huge family gathering,Mostly Yes,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,700
+2021/05/30 8:43:53 pm GMT+5:30,22,Female,5,153,49,Animal Videos,No,No,85000,IPhone,2500,1,Neutral,Go for a trip,Mostly Yes,Non-Vegetarian Food,Biryani,1000
+2021/05/30 8:57:44 pm GMT+5:30,25,Female,4,161,54,Web Series,No,I don't play mobile games,NA,Motorola,5400,3,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Strictly Vegetarian Food,Rajma Chawal,800
+2021/05/30 9:19:13 pm GMT+5:30,55,Female,4,147,55,Music Videos,No,No,15000,Motorola,300,2,Dissatisfied,Go for a trip,Mostly No,Gluten-free Food,Fish Curry - Rice,300
+2021/05/30 10:29:56 pm GMT+5:30,28,Female,5,165,70,Movie,Yes,No,14000,Huawei,1992,2,Very dissatisfied,Go for a trip,No,Strictly Vegetarian Food,Rajma Chawal,1000
+2021/05/30 10:43:24 pm GMT+5:30,27,Female,5,177,70,Web Series,"No, but I want to",No,40000,OnePlus,2399,3,Satisfied,Go for a trip,Yes,Strictly Vegetarian Food,Noodles,2000
+2021/05/30 10:51:33 pm GMT+5:30,33,Female,2,162,65,Web Series,No,I don't play mobile games,12000,Xiaomi,555,0,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Fish Curry - Rice,1000
+2021/05/30 10:54:08 pm GMT+5:30,34,Male,2,185,72,Short Film,No,No,10000,Xiaomi,555,0,Dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,1000
+2021/05/30 10:57:22 pm GMT+5:30,19,Female,4,165,45,Web Series,No,No,NA,Samsung,699,1,Neutral,Have a huge family gathering,No,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,1000
+2021/05/30 10:58:41 pm GMT+5:30,20,Male,2,169,53,Other,Yes,No,20000,Xiaomi,449,2,Neutral,Other,No,Non-Vegetarian Food,Biryani,200
+2021/05/30 10:59:25 pm GMT+5:30,28,Male,5,170,65,Short Film,Yes,No,12500,Xiaomi,550,3,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Roti/Paratha with some suitable side dish,800
+2021/05/30 11:05:15 pm GMT+5:30,24,Male,4,167,64,Web Series,No,No,85000,IPhone,555,4,Neutral,Go out with friends/family (for movies/dinner etc.),Mostly No,Strictly Vegetarian Food,Veg Pulao,1000
+2021/05/30 11:34:23 pm GMT+5:30,21,Female,5,NA,53,Movie,No,I don't play mobile games,17000,Other,6002,2,Neutral,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,2000
+2021/05/31 12:16:15 am GMT+5:30,27,Female,5,165,45,Movie,No,I don't play mobile games,70000,IPhone,399,4,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Non-Vegetarian Food,Biryani,2500
+2021/05/31 1:23:36 am GMT+5:30,24,Male,5,180,71,Children Videos,"No, but I want to",No,8000,Other,2400,1,Neutral,Other,Yes,Non-Vegetarian Food,Biryani,1500
+2021/05/31 2:14:47 am GMT+5:30,22,Female,5,149,50,Web Series,No,No,7500,Xiaomi,150,0,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,500
+2021/05/31 2:49:50 am GMT+5:30,25,Female,5,160,54,Movie,Yes,No,NA,Samsung,550,4,Dissatisfied,Continue to stay at home,No,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,250
+2021/05/31 3:07:59 am GMT+5:30,30,Male,11,176,95,Other,No,No,18000,Samsung,1000,0,Neutral,Go out with friends/family (for movies/dinner etc.),Mostly No,Non-Vegetarian Food,Biryani,1000
+2021/05/31 7:38:02 am GMT+5:30,27,Female,5,153,69,Short Film,Yes,No,16000,Vivo,400,4,Neutral,Other,No,Strictly Vegetarian Food,Veg Pulao,1500
+2021/05/31 7:38:28 am GMT+5:30,35,Male,4,172,50,Other,No,No,10000,Samsung,599,0,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,500
+2021/05/31 10:06:32 am GMT+5:30,25,Male,5,184,90,Movie,No,No,23000,Huawei,449,2,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),No,Strictly Vegetarian Food,Roti/Paratha with some suitable side dish,500
+2021/05/31 11:57:32 am GMT+5:30,21,Male,5,169,65,Other,Yes,No,32999,OnePlus,349,1,Dissatisfied,Other,No,Strictly Vegetarian Food,Rajma Chawal,400
+2021/05/31 12:45:45 pm GMT+5:30,28,Male,4,162.56,85,Movie,No,No,19800,Oppo,1800,2,Very dissatisfied,Go out with friends/family (for movies/dinner etc.),Yes,Non-Vegetarian Food,Biryani,1500
+2021/06/02 12:26:56 am GMT+5:30,34,Male,2,175.26,90,Movie,Yes,No,12000,Xiaomi,1136,1,Very dissatisfied,Go for a trip,No,Non-Vegetarian Food,Biryani,1000
