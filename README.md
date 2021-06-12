@@ -31,6 +31,8 @@ __[Link to Slides for lecture 1 ](/lecture1.html)__
 
 __[Link to Slides for lecture 2 ](/lecture2.html)__
 
+__[Link to Slides for lecture 3 ](/lecture3.html)__
+
 ## Other Important Documents
 
 Dr Saswata has graciously prepared two documents that detail the logistics and schedule of this workshop. Links to both documents are below.
