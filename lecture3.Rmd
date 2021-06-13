@@ -56,7 +56,8 @@ background-size: cover
 .fontcol1[`r Sys.Date()`] <br>
 
 .pull-left[
-[Background image: Landscape with a Double Spruce by Albrecht Altdorfer Cross](https://images.metmuseum.org/CRDImages/dp/original/DP822181.jpg)
+[Background image: Landscape with a Double Spruce by Albrecht Altdorfer Cross](https://images.metmuseum.org/CRDImages/dp/original/DP822181.jpg)<br>
+[dplyr logo from RStudio github repo](https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/dplyr.png)
 ]
 
 ---
@@ -142,7 +143,8 @@ class: top,left
 
 .pull-right[
 <img src="https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/dplyr.png" width="350px"/>
-
+<br>
+[dplyr logo from RStudio github repo](https://raw.githubusercontent.com/rstudio/hex-stickers/master/thumbs/dplyr.png)
 
 ]
 
@@ -181,6 +183,9 @@ class: top,left
 .panel[.panel-name[The filter funciton]
 
 <img src = "https://raw.githubusercontent.com/allisonhorst/stats-illustrations/master/rstats-artwork/dplyr_filter.jpg" height = "450px">
+
+<br>
+[Art by @alisonhorst](https://www.allisonhorst.com/)
 
 ]
 .panel[.panel-name[Example]
@@ -491,6 +496,10 @@ class: top, left
 .panel[.panel-name[What does it do?]
 
 <img src = "images/mutate.png" width = "500px">
+
+<br>
+
+[Art by @alisonhorst](https://www.allisonhorst.com/)
 
 ]
 
