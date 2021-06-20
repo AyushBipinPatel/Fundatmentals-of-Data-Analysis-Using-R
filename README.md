@@ -35,6 +35,11 @@ __[Link to Slides for lecture 3 ](/lecture3.html)__
 
 __[Link to Slides for lecture 4 ](/lecture4.html)__
 
+__Lecture 5 was conducted as a demonstration of concepts explored in previous 4 lectures.__
+
+__[Link to Slides for lecture 6 ](/lecture6.html)__
+
+
 ## Other Important Documents
 
 Dr Saswata has graciously prepared two documents that detail the logistics and schedule of this workshop. Links to both documents are below.
