@@ -1,0 +1,630 @@
+---
+title: "Some more dplyr"
+subtitle: "Lecture 7"
+author: "Ayush Patel"
+institute: "Department of Economics, Kanchrapara College"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["default","theme.css"]
+    lib_dir: libs
+    nature:
+      ratio: 16:9
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    seal: false
+---
+
+```{r setup,include=FALSE}
+#options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(cache = FALSE, warning = FALSE, message = FALSE, fig.height = 6)
+library(tidyverse)
+library(palmerpenguins)
+library(flair)
+library(kableExtra)
+library(knitr)
+library(countdown)
+library(here)
+library(icons)
+library(flipbookr)
+library(xaringanExtra)
+library(lsr)
+xaringanExtra::use_panelset()
+
+read.csv(here("data/cleaned_survey_data.csv")) -> data_survey
+
+data_survey %>% filter(height_cm < 190) -> data_survey
+
+
+```
+
+layout: true
+---
+
+class: inverse, center, top
+
+background-image: url(https://images.metmuseum.org/CRDImages/ad/original/DT202023.jpg)
+background-size: contain
+
+
+# Some more dplyr
+
+
+### Lecture 7
+
+.big[.fontcol1[Ayush Patel]]
+<br>
+.fontcol1[Workshop on Fundamentals of Data Analysis using R]<br>
+.fontcol1[Organised by Department of Economics, Kanchrapara College]<br>
+.fontcol1[`r Sys.Date()`] <br>
+
+.pull-left[
+[Background image:  Plums by John William Hill](https://images.metmuseum.org/CRDImages/ad/original/DT202023.jpg)
+]
+
+---
+name: Introduction
+
+class: left,middle
+
+.pull-left[
+
+## Find me 
+
+[__@ayushbipinpatel__](https://twitter.com/ayushbipinpatel) <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGQ9Ik01MTIsOTcuMjQ4Yy0xOS4wNCw4LjM1Mi0zOS4zMjgsMTMuODg4LTYwLjQ4LDE2LjU3NmMyMS43Ni0xMi45OTIsMzguMzY4LTMzLjQwOCw0Ni4xNzYtNTguMDE2DQoJCQljLTIwLjI4OCwxMi4wOTYtNDIuNjg4LDIwLjY0LTY2LjU2LDI1LjQwOEM0MTEuODcyLDYwLjcwNCwzODQuNDE2LDQ4LDM1NC40NjQsNDhjLTU4LjExMiwwLTEwNC44OTYsNDcuMTY4LTEwNC44OTYsMTA0Ljk5Mg0KCQkJYzAsOC4zMiwwLjcwNCwxNi4zMiwyLjQzMiwyMy45MzZjLTg3LjI2NC00LjI1Ni0xNjQuNDgtNDYuMDgtMjE2LjM1Mi0xMDkuNzkyYy05LjA1NiwxNS43MTItMTQuMzY4LDMzLjY5Ni0xNC4zNjgsNTMuMDU2DQoJCQljMCwzNi4zNTIsMTguNzIsNjguNTc2LDQ2LjYyNCw4Ny4yMzJjLTE2Ljg2NC0wLjMyLTMzLjQwOC01LjIxNi00Ny40MjQtMTIuOTI4YzAsMC4zMiwwLDAuNzM2LDAsMS4xNTINCgkJCWMwLDUxLjAwOCwzNi4zODQsOTMuMzc2LDg0LjA5NiwxMDMuMTM2Yy04LjU0NCwyLjMzNi0xNy44NTYsMy40NTYtMjcuNTIsMy40NTZjLTYuNzIsMC0xMy41MDQtMC4zODQtMTkuODcyLTEuNzkyDQoJCQljMTMuNiw0MS41NjgsNTIuMTkyLDcyLjEyOCw5OC4wOCw3My4xMmMtMzUuNzEyLDI3LjkzNi04MS4wNTYsNDQuNzY4LTEzMC4xNDQsNDQuNzY4Yy04LjYwOCwwLTE2Ljg2NC0wLjM4NC0yNS4xMi0xLjQ0DQoJCQlDNDYuNDk2LDQ0Ni44OCwxMDEuNiw0NjQsMTYxLjAyNCw0NjRjMTkzLjE1MiwwLDI5OC43NTItMTYwLDI5OC43NTItMjk4LjY4OGMwLTQuNjQtMC4xNi05LjEyLTAuMzg0LTEzLjU2OA0KCQkJQzQ4MC4yMjQsMTM2Ljk2LDQ5Ny43MjgsMTE4LjQ5Niw1MTIsOTcuMjQ4eiIvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" width=5%>   
+  
+[__@AyushBipinPatel__](https://github.com/AyushBipinPatel) <img src="data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyNCAyNCIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTIgLjVjLTYuNjMgMC0xMiA1LjI4LTEyIDExLjc5MiAwIDUuMjExIDMuNDM4IDkuNjMgOC4yMDUgMTEuMTg4LjYuMTExLjgyLS4yNTQuODItLjU2NyAwLS4yOC0uMDEtMS4wMjItLjAxNS0yLjAwNS0zLjMzOC43MTEtNC4wNDItMS41ODItNC4wNDItMS41ODItLjU0Ni0xLjM2MS0xLjMzNS0xLjcyNS0xLjMzNS0xLjcyNS0xLjA4Ny0uNzMxLjA4NC0uNzE2LjA4NC0uNzE2IDEuMjA1LjA4MiAxLjgzOCAxLjIxNSAxLjgzOCAxLjIxNSAxLjA3IDEuODAzIDIuODA5IDEuMjgyIDMuNDk1Ljk4MS4xMDgtLjc2My40MTctMS4yODIuNzYtMS41NzctMi42NjUtLjI5NS01LjQ2Ni0xLjMwOS01LjQ2Ni01LjgyNyAwLTEuMjg3LjQ2NS0yLjMzOSAxLjIzNS0zLjE2NC0uMTM1LS4yOTgtLjU0LTEuNDk3LjEwNS0zLjEyMSAwIDAgMS4wMDUtLjMxNiAzLjMgMS4yMDkuOTYtLjI2MiAxLjk4LS4zOTIgMy0uMzk4IDEuMDIuMDA2IDIuMDQuMTM2IDMgLjM5OCAyLjI4LTEuNTI1IDMuMjg1LTEuMjA5IDMuMjg1LTEuMjA5LjY0NSAxLjYyNC4yNCAyLjgyMy4xMiAzLjEyMS43NjUuODI1IDEuMjMgMS44NzcgMS4yMyAzLjE2NCAwIDQuNTMtMi44MDUgNS41MjctNS40NzUgNS44MTcuNDIuMzU0LjgxIDEuMDc3LjgxIDIuMTgyIDAgMS41NzgtLjAxNSAyLjg0Ni0uMDE1IDMuMjI5IDAgLjMwOS4yMS42NzguODI1LjU2IDQuODAxLTEuNTQ4IDguMjM2LTUuOTcgOC4yMzYtMTEuMTczIDAtNi41MTItNS4zNzMtMTEuNzkyLTEyLTExLjc5MnoiIGZpbGw9IiMyMTIxMjEiLz48L3N2Zz4=" width=5%>
+  
+  
+[__ayushpatel.netlify.app__](https://ayushpatel.netlify.app/) <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNTEyLjQxOCA1MTIuNDE4IiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMi40MTggNTEyLjQxOCIgd2lkdGg9IjUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtNDM3LjMzNSA3NS4wODJjLTEwMC4xLTEwMC4xMDItMjYyLjEzNi0xMDAuMTE4LTM2Mi4yNTIgMC0xMDAuMTAzIDEwMC4xMDItMTAwLjExOCAyNjIuMTM2IDAgMzYyLjI1MyAxMDAuMSAxMDAuMTAyIDI2Mi4xMzYgMTAwLjExNyAzNjIuMjUyIDAgMTAwLjEwMy0xMDAuMTAyIDEwMC4xMTctMjYyLjEzNiAwLTM2Mi4yNTN6bS0xMC43MDYgMzI1LjczOWMtMTEuOTY4LTEwLjcwMi0yNC43Ny0yMC4xNzMtMzguMjY0LTI4LjMzNSA4LjkxOS0zMC44MDkgMTQuMjAzLTY0LjcxMiAxNS40NTItOTkuOTU0aDc1LjMwOWMtMy40MDUgNDcuNTAzLTIxLjY1NyA5Mi4wNjQtNTIuNDk3IDEyOC4yODl6bS0zOTMuMzM4LTEyOC4yODloNzUuMzA5YzEuMjQ5IDM1LjI0MiA2LjUzMyA2OS4xNDUgMTUuNDUyIDk5Ljk1NC0xMy40OTQgOC4xNjItMjYuMjk2IDE3LjYzMy0zOC4yNjQgMjguMzM1LTMwLjg0LTM2LjIyNS00OS4wOTEtODAuNzg2LTUyLjQ5Ny0xMjguMjg5em01Mi40OTgtMTYwLjkzNmMxMS45NjggMTAuNzAyIDI0Ljc3IDIwLjE3MyAzOC4yNjQgMjguMzM1LTguOTE5IDMwLjgwOS0xNC4yMDMgNjQuNzEyLTE1LjQ1MiA5OS45NTRoLTc1LjMxYzMuNDA2LTQ3LjUwMiAyMS42NTctOTIuMDYzIDUyLjQ5OC0xMjguMjg5em0xNTQuMDk3IDMxLjcwOWMtMjYuNjIyLTEuOTA0LTUyLjI5MS04LjQ2MS03Ni4wODgtMTkuMjc4IDEzLjg0LTM1LjYzOSAzOS4zNTQtNzguMzg0IDc2LjA4OC04OC45Nzd6bTAgMzIuNzA4djYzLjg3M2gtOTguNjI1YzEuMTMtMjkuODEyIDUuMzU0LTU4LjQzOSAxMi4zNzktODQuNjMyIDI3LjA0MyAxMS44MjIgNTYuMTI3IDE4Ljg4MiA4Ni4yNDYgMjAuNzU5em0wIDk2LjUxOXY2My44NzNjLTMwLjExOSAxLjg3Ny01OS4yMDMgOC45MzctODYuMjQ2IDIwLjc1OS03LjAyNS0yNi4xOTMtMTEuMjQ5LTU0LjgyLTEyLjM3OS04NC42MzJ6bTAgOTYuNTgxdjEwOC4yNTRjLTM2LjczMi0xMC41OTMtNjIuMjQ2LTUzLjMzMy03Ni4wODgtODguOTc2IDIzLjc5Ny0xMC44MTcgNDkuNDY2LTE3LjM3NCA3Ni4wODgtMTkuMjc4em0zMi42NDYgMGMyNi42MjIgMS45MDQgNTIuMjkxIDguNDYxIDc2LjA4OCAxOS4yNzgtMTMuODQxIDM1LjY0LTM5LjM1NCA3OC4zODMtNzYuMDg4IDg4Ljk3NnptMC0zMi43MDh2LTYzLjg3M2g5OC42MjVjLTEuMTMgMjkuODEyLTUuMzU0IDU4LjQzOS0xMi4zNzkgODQuNjMyLTI3LjA0My0xMS44MjItNTYuMTI3LTE4Ljg4Mi04Ni4yNDYtMjAuNzU5em0wLTk2LjUxOXYtNjMuODczYzMwLjExOS0xLjg3NyA1OS4yMDMtOC45MzcgODYuMjQ2LTIwLjc1OSA3LjAyNSAyNi4xOTMgMTEuMjQ5IDU0LjgyIDEyLjM3OSA4NC42MzJ6bTAtOTYuNTgxdi0xMDguMjU0YzM2LjczNCAxMC41OTMgNjIuMjQ4IDUzLjMzOCA3Ni4wODggODguOTc3LTIzLjc5NyAxMC44MTYtNDkuNDY2IDE3LjM3My03Ni4wODggMTkuMjc3em03My4zMi05MS45NTdjMjAuODk1IDkuMTUgNDAuMzg5IDIxLjU1NyA1Ny44NjQgMzYuOTUxLTguMzE4IDcuMzM0LTE3LjA5NSAxMy45ODQtMjYuMjYgMTkuOTMxLTguMTM5LTIwLjE1Mi0xOC41MzYtMzkuNzM2LTMxLjYwNC01Ni44ODJ6bS0yMTAuODkxIDU2Ljg4MmMtOS4xNjUtNS45NDctMTcuOTQxLTEyLjU5Ny0yNi4yNi0xOS45MzEgMTcuNDc1LTE1LjM5NCAzNi45NjktMjcuODAxIDU3Ljg2NC0zNi45NTEtMTMuMDY4IDE3LjE0OC0yMy40NjUgMzYuNzMyLTMxLjYwNCA1Ni44ODJ6bS4wMDEgMjk1Ljk1OGM4LjEzOCAyMC4xNTEgMTguNTM3IDM5LjczNiAzMS42MDQgNTYuODgyLTIwLjg5NS05LjE1LTQwLjM4OS0yMS41NTctNTcuODY0LTM2Ljk1MSA4LjMxOC03LjMzNCAxNy4wOTUtMTMuOTg0IDI2LjI2LTE5LjkzMXptMjQyLjQ5NCAwYzkuMTY1IDUuOTQ3IDE3Ljk0MiAxMi41OTcgMjYuMjYgMTkuOTMtMTcuNDc1IDE1LjM5NC0zNi45NjkgMjcuODAxLTU3Ljg2NCAzNi45NTEgMTMuMDY3LTE3LjE0NCAyMy40NjUtMzYuNzI5IDMxLjYwNC01Ni44ODF6bTI2LjM2Mi0xNjQuMzAyYy0xLjI0OS0zNS4yNDItNi41MzMtNjkuMTQ2LTE1LjQ1Mi05OS45NTQgMTMuNDk0LTguMTYyIDI2LjI5NS0xNy42MzMgMzguMjY0LTI4LjMzNSAzMC44NCAzNi4yMjUgNDkuMDkxIDgwLjc4NiA1Mi40OTcgMTI4LjI4OXoiLz48L3N2Zz4=" width=5%>    
+  
+  
+[__ayush.ap58@gmail.com__](ayush.ap58@gmail.com)<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTExLjk3NCA1MTEuOTc0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTEuOTc0IDUxMS45NzQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8Zz4NCgkJCTxwYXRoIGQ9Ik01MTEuODcyLDE5NS43MjVjLTAuMDUzLTAuNTg4LTAuMTctMS4xNjktMC4zNS0xLjczMmMtMC4xMTctMC41MDMtMC4yOC0wLjk5NC0wLjQ4Ni0xLjQ2OA0KCQkJCWMtMC4yMzktMC40NjMtMC41MjUtMC45MDEtMC44NTMtMS4zMDZjLTAuMzI5LTAuNDgxLTAuNzEtMC45MjQtMS4xMzUtMS4zMjNjLTAuMTM3LTAuMTE5LTAuMTk2LTAuMjgyLTAuMzQxLTAuNDAxDQoJCQkJbC04Mi4wNjUtNjMuNzM1VjU5LjcwNGMwLTE0LjEzOC0xMS40NjItMjUuNi0yNS42LTI1LjZoLTkyLjQ3NkwyNzEuNTM5LDUuMzU1Yy05LjE0Ny03LjEzNC0yMS45NzQtNy4xMzQtMzEuMTIxLDANCgkJCQlsLTM3LjAzNSwyOC43NDloLTkyLjQ3NmMtMTQuMTM4LDAtMjUuNiwxMS40NjEtMjUuNiwyNS42djY2LjA1N0wzLjI2OCwxODkuNDk2Yy0wLjE0NSwwLjEyLTAuMjA1LDAuMjgyLTAuMzQxLDAuNDAxDQoJCQkJYy0wLjQyNSwwLjM5OC0wLjgwNiwwLjg0Mi0xLjEzNSwxLjMyM2MtMC4zMjgsMC40MDUtMC42MTQsMC44NDItMC44NTMsMS4zMDZjLTAuMjA3LDAuNDczLTAuMzY5LDAuOTY1LTAuNDg2LDEuNDY4DQoJCQkJYy0wLjE3OCwwLjU1NS0wLjI5NSwxLjEyNy0wLjM1LDEuNzA3YzAsMC4xNzktMC4xMDIsMC4zMzMtMC4xMDIsMC41MTJWNDg2LjM3YzAuMDEyLDUuNDI4LDEuNzY4LDEwLjcwOCw1LjAwOSwxNS4wNjENCgkJCQljMC4wNTEsMC4wNzcsMC4wNiwwLjE3MSwwLjExOSwwLjIzOWMwLjA2LDAuMDY4LDAuMTg4LDAuMTQ1LDAuMjczLDAuMjM5YzQuNzk0LDYuMzA4LDEyLjI1LDEwLjAyNywyMC4xNzMsMTAuMDYxaDQ2MC44DQoJCQkJYzcuOTU0LTAuMDI0LDE1LjQ0MS0zLjc2MSwyMC4yNDEtMTAuMTAzYzAuMDY4LTAuMDg1LDAuMTcxLTAuMTExLDAuMjMtMC4xOTZjMC4wNi0wLjA4NSwwLjA2OC0wLjE2MiwwLjEyLTAuMjM5DQoJCQkJYzMuMjQxLTQuMzU0LDQuOTk3LTkuNjM0LDUuMDA5LTE1LjA2MVYxOTYuMjM3QzUxMS45NzQsMTk2LjA1OCw1MTEuODgxLDE5NS45MDQsNTExLjg3MiwxOTUuNzI1eiBNMjUwLjg1NCwxOC44Mg0KCQkJCWMyLjk4LTIuMzY4LDcuMi0yLjM2OCwxMC4xOCwwbDE5LjY4NiwxNS4yODNoLTQ5LjQ5M0wyNTAuODU0LDE4LjgyeiBNMjcuNzI1LDQ5NC45MDRsMjIzLjEzLTE3My4zMjENCgkJCQljMi45ODItMi4zNjQsNy4xOTktMi4zNjQsMTAuMTgsMGwyMjMuMTg5LDE3My4zMjFIMjcuNzI1eiBNNDk0LjkwOCw0ODEuNkwyNzEuNTM5LDMwOC4xMTdjLTkuMTQ5LTcuMTI4LTIxLjk3Mi03LjEyOC0zMS4xMjEsMA0KCQkJCUwxNy4wNDEsNDgxLjZWMjA5LjIzM0wxNTYuODc3LDMxNy44MmMzLjcyNiwyLjg4OSw5LjA4OCwyLjIxMSwxMS45NzctMS41MTVjMi44ODktMy43MjYsMi4yMTEtOS4wODgtMS41MTUtMTEuOTc3DQoJCQkJTDI1LjI3NiwxOTQuMDE4bDYwLjAzMi00Ni42NTJ2NjUuOTM3YzAsNC43MTMsMy44MjEsOC41MzMsOC41MzMsOC41MzNjNC43MTMsMCw4LjUzMy0zLjgyMSw4LjUzMy04LjUzM3YtMTUzLjYNCgkJCQljMC00LjcxMywzLjgyLTguNTMzLDguNTMzLTguNTMzaDI5MC4xMzNjNC43MTMsMCw4LjUzMywzLjgyLDguNTMzLDguNTMzdjE1My42YzAsNC43MTMsMy44Miw4LjUzMyw4LjUzMyw4LjUzMw0KCQkJCXM4LjUzMy0zLjgyMSw4LjUzMy04LjUzM3YtNjUuOTM3bDYwLjAzMiw0Ni42NTJsLTE0Mi4zMSwxMTAuNTA3Yy0yLjQ0OCwxLjg1NS0zLjcxMSw0Ljg4My0zLjMwNSw3LjkyOHMyLjQxNyw1LjYzNyw1LjI2Niw2Ljc4Ng0KCQkJCWMyLjg0OSwxLjE0OSw2LjA5NiwwLjY3OSw4LjUwMS0xLjIzMmwxNDAuMDgzLTEwOC43NzRWNDgxLjZ6Ii8+DQoJCQk8cGF0aCBkPSJNMzU4LjM3NCwyMDQuNzd2LTM0LjEzM2MwLTU2LjU1NC00NS44NDYtMTAyLjQtMTAyLjQtMTAyLjRjLTU2LjU1NCwwLTEwMi40LDQ1Ljg0Ni0xMDIuNCwxMDIuNA0KCQkJCXM0NS44NDYsMTAyLjQsMTAyLjQsMTAyLjRjNC43MTMsMCw4LjUzMy0zLjgyLDguNTMzLTguNTMzcy0zLjgyLTguNTMzLTguNTMzLTguNTMzYy00Ny4xMjgsMC04NS4zMzMtMzguMjA1LTg1LjMzMy04NS4zMzMNCgkJCQlzMzguMjA1LTg1LjMzMyw4NS4zMzMtODUuMzMzczg1LjMzMywzOC4yMDUsODUuMzMzLDg1LjMzM3YzNC4xMzNjMCw5LjQyNi03LjY0MSwxNy4wNjctMTcuMDY3LDE3LjA2Nw0KCQkJCXMtMTcuMDY3LTcuNjQxLTE3LjA2Ny0xNy4wNjd2LTM0LjEzM2MwLTQuNzEzLTMuODItOC41MzMtOC41MzMtOC41MzNzLTguNTMzLDMuODItOC41MzMsOC41MzMNCgkJCQljMCwxOC44NTEtMTUuMjgyLDM0LjEzMy0zNC4xMzMsMzQuMTMzYy0xOC44NTEsMC0zNC4xMzMtMTUuMjgyLTM0LjEzMy0zNC4xMzNzMTUuMjgyLTM0LjEzMywzNC4xMzMtMzQuMTMzDQoJCQkJYzQuNzEzLDAsOC41MzMtMy44Miw4LjUzMy04LjUzM3MtMy44Mi04LjUzMy04LjUzMy04LjUzM2MtMjIuOTE1LTAuMDUxLTQzLjA3NCwxNS4xMy00OS4zNTQsMzcuMTY4DQoJCQkJYy02LjI4LDIyLjAzOCwyLjg0Nyw0NS41NjUsMjIuMzQ3LDU3LjYwMWMxOS41LDEyLjAzNiw0NC42MjIsOS42NSw2MS41MDctNS44NDNjMS44NTgsMTguMDQ2LDE3LjU0MywzMS40NjQsMzUuNjU5LDMwLjUwNQ0KCQkJCUMzNDQuMjUsMjM3LjkxLDM1OC40MzEsMjIyLjkxMiwzNTguMzc0LDIwNC43N3oiLz4NCgkJPC9nPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" width=5%>  
+
+]
+
+.pull-right[
+<img src = "https://images.metmuseum.org/CRDImages/ad/original/57258.jpg">
+
+.small[
+Image: [John Biglin in a Single Scull by Thomas Eakins](https://images.metmuseum.org/CRDImages/ad/original/57258.jpg)
+]
+
+]
+---
+
+class: left, middle
+
+.pull-left[
+
+# About You
+
+Pre-requisite for this lecture.
+<br>
+
+You know __what a function is and how to use a function.__
+<br>
+
+
+You know __basics of data wrangling and visualization__
+<br>
+
+
+]
+
+.pull-right[
+<img src = "https://images.metmuseum.org/CRDImages/ad/original/DT84.jpg">
+
+.small[
+[Image:  Lake George by John Frederick Kensett ](https://images.metmuseum.org/CRDImages/ad/original/DT84.jpg)
+]
+]
+
+---
+
+class: top, center
+
+# What are we learning today
+
+#### Grouping a variable using `case_when()`
+
+#### Pivoting data using `pivot_longer()` and `pivot_wider()`
+
+#### Joining data tables using `left_join()` and `*_join()` 
+
+---
+
+class: top, left
+
+# Grouping a variable with `case_when()`
+
+.yscroll[
+
+.panelset[
+
+.panel[.panel-name[Consider this data]
+
+```{r echo=FALSE}
+
+tibble(
+  food_item = c("Biryani", "Ratia", "Pasta", "Fish curry",
+                "Mutton Khema", "Squid fry", "Dal chawal"),
+  price = c(250,50,500,600,650,450,100)
+)
+
+
+```
+
+
+]
+
+.panel[.panel-name[What and How]
+
+### What 
+
+Say you want to add a new variable in the data according to following requirement:
+
+If price is between 1 to 100 classify as `Affordable`
+<br>
+If price is between 101 to 300 classify as `Not too costly`
+<br>
+If price is between 301 or more classify as `Will go somewhere else`
+
+### How
+
+> Using the `case_when()` funciton
+
+new_var = case_when(
+
+condition 1 ~ classification1,<br>
+condition 2 ~ classification2,<br>
+condition 3 ~ classification3,<br>
+.
+.
+.
+.
+)
+
+]
+
+.panel[.panel-name[Example]
+
+```{r}
+c(1,2,3,4,5,6,9,8) -> numbers_obj
+
+3 %% 3
+
+5 %% 3
+
+is_divisible_by_2_and_3 = case_when(
+  
+  numbers_obj %% 3 == 0 &
+    numbers_obj %% 2 == 0 ~ "Divisible by 2 and 3",
+  numbers_obj %% 3 != 0 &
+    numbers_obj %% 2 == 0 ~ "Divisible by 2 but not 3",
+  numbers_obj %% 3 == 0 &
+    numbers_obj %% 2 != 0 ~ "Divisible by 3 but not 2",
+  numbers_obj %% 3 != 0 &
+    numbers_obj %% 2 != 0 ~ "Divisible by neither 2 or 3",
+  
+)
+```
+
+```{r}
+is_divisible_by_2_and_3
+```
+
+<br>
+<br>
+
+```{r include=FALSE}
+tibble(
+  food_item = c("Biryani", "Ratia", "Pasta", "Fish curry",
+                "Mutton Khema", "Squid fry", "Dal chawal"),
+  price = c(250,50,500,600,650,450,100)
+) -> food_price
+
+```
+
+
+```{r}
+food_price %>% 
+  mutate(
+    how_costly = case_when(
+      price >= 1 & price <= 100 ~ "Affordable",
+      price >= 101 & price <= 300 ~ "Not too costly",
+      price >= 301 ~ "Will go somewhere else"
+    )
+  )
+```
+
+
+]
+
+.panel[.panel-name[Other Important stuff]
+
+## Mutually exclusive
+
+I my _opinion_ it is best suggested to use `case_when()` in case where all the conditions we are going to use are __Mutually Exclusive__.
+
+### Why you ask?
+
+consider this
+
+```{r}
+
+numbers_obj
+
+new_class <- case_when(
+  numbers_obj > 0 ~ "Greater than 0",
+  numbers_obj > 5 ~ "Greater than 5",
+  numbers_obj < 100 ~ "less than 100",
+)
+
+new_class
+```
+
+## When no condition is matched
+
+
+```{r}
+c(numbers_obj,-1) -> numbers_obj
+
+new_class <- case_when(
+  numbers_obj > 0 ~ "Greater than 0",
+  numbers_obj > 5 ~ "Greater than 5",
+  numbers_obj < 100 & numbers_obj > 0 ~ 
+    "less than 100 and greater than 0",
+)
+
+
+new_class
+```
+
+
+<br>
+<br>
+]
+
+]
+
+
+]
+
+---
+class: inverse, center, middle
+
+background-image: url(https://images.metmuseum.org/CRDImages/ad/original/DT1506.jpg)
+
+background-size: cover
+
+## `r icon_style(icons::fontawesome("keyboard"),scale = 3,fill = "white")`
+
+## Your Turn 1
+
+.left[
+
+
+Go to the project `Your Turn - Lecture 7`
+
+Open a file named `exercise for lecture 7.Rmd`
+
+Read the instructions and complete the exercise `Your Trun 1`
+
+]
+
+```{r time1, echo=FALSE}
+countdown(minutes = 7)
+```
+
+.small[
+[Background Image: The Chess Players by Thomas Eakins](https://images.metmuseum.org/CRDImages/ad/original/DT1506.jpg)
+]
+
+---
+
+
+name: intro pivots
+
+class: top,center
+
+# Pivot
+
+<img src="https://raw.githubusercontent.com/AyushBipinPatel/Module-Intro-to-data-visualizarion/master/PivotPicture.jpg", width=65%>
+
+
+.left[Prakhar is a hypothetical person ;)]
+---
+
+name: pivot longer demo
+
+# Example for `pivot_longer()`
+
+.yscroll[
+
+
+```{r include=FALSE}
+tibble(
+  names = c("person1", "person2", "person3"),
+  hat_size = c(5,6,7),
+  shirt_size = c(35,40,45),
+  belt_size = c(70,85,100)
+) -> data_person_accesories
+
+```
+
+```{r}
+data_person_accesories
+
+data_person_accesories %>% 
+  pivot_longer(cols = c(hat_size,
+                        shirt_size,belt_size),
+               names_to = "Accessories_clothing",
+               values_to = "Size")
+```
+
+
+<br>
+
+]
+
+---
+
+name: example Pivot Longer    
+class: top,center, inverse
+
+background-image: url(https://images.metmuseum.org/CRDImages/ad/original/DT1506.jpg)
+
+background-size: cover
+
+# Your Turn 2
+
+
+## `r icon_style(icons::fontawesome("keyboard"),scale = 3,fill = "white")`
+
+.left[
+
+
+Go to the project `Your Turn - Lecture 7`
+
+Open a file named `exercise for lecture 7.Rmd`
+
+Read the instructions and complete the exercise `Your Trun 2`
+
+]
+
+```{r time2, echo=FALSE}
+countdown(minutes = 7)
+```
+
+.small[
+[Background Image: The Chess Players by Thomas Eakins](https://images.metmuseum.org/CRDImages/ad/original/DT1506.jpg)
+]
+
+
+---
+
+name: demo pivot_wider
+
+class: top,center
+
+# Example for `pivot_wider()`
+
+.left[Consider the following data]
+
+```{r include=FALSE}
+tibble(
+  name = c(rep(c("Ayush"),3),rep(c("Prakhar"),3)),
+  Subject = rep(c("Mathematics","Science","C++"),2),
+  score = c(98,80,55,65,50,0)
+) -> scores
+```
+
+.left[
+```{r}
+scores
+```
+]
+
+.left[We want it in the following format]
+
+.left[
+name  | Mathematics  | Science  | C++
+------|--------------|----------|-----
+
+]
+
+---
+
+name: demo continued pivot_wider
+
+class: top,center
+
+# Example for `pivot_wider()`
+
+.left[
+```{r}
+scores %>% 
+  pivot_wider(names_from = Subject, values_from = score)
+```
+
+]
+
+---
+
+
+name: example Pivot Longer    
+class: top,center, inverse
+
+background-image: url(https://images.metmuseum.org/CRDImages/ad/original/DT1506.jpg)
+
+background-size: cover
+
+# Your Turn 3
+
+
+## `r icon_style(icons::fontawesome("keyboard"),scale = 3,fill = "white")`
+
+.left[
+
+
+Go to the project `Your Turn - Lecture 7`
+
+Open a file named `exercise for lecture 7.Rmd`
+
+Read the instructions and complete the exercise `Your Trun 3`
+
+]
+
+```{r time3, echo=FALSE}
+countdown(minutes = 7)
+```
+
+.small[
+[Background Image: The Chess Players by Thomas Eakins](https://images.metmuseum.org/CRDImages/ad/original/DT1506.jpg)
+]
+---
+
+class: top, left
+
+## Joining Tables
+
+using animations by [Garrick Aden-Buie](https://twitter.com/grrrck) for teaching aid
+
+
+.yscroll[
+
+.panelset[
+
+.panel[.panel-name[Left Join]
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Getting ready to teach dplyr joins to new <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> users tomorrow, so naturally I productively procrastinated by getting to know the new gganimate. It is the coolest! <a href="https://t.co/1kkOi5D5TK">pic.twitter.com/1kkOi5D5TK</a></p>&mdash; Garrick Aden-Buie (@grrrck) <a href="https://twitter.com/grrrck/status/1029567123029467136?ref_src=twsrc%5Etfw">August 15, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br>
+]
+
+.panel[.panel-name[Inner Join]
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I really like how easily the gganimate calls fit in with the ggplot pipeline. It&#39;s very clear <a href="https://twitter.com/thomasp85?ref_src=twsrc%5Etfw">@thomasp85</a> put a lot of thought and care into the API design. <a href="https://t.co/hnoqVw4eGG">pic.twitter.com/hnoqVw4eGG</a></p>&mdash; Garrick Aden-Buie (@grrrck) <a href="https://twitter.com/grrrck/status/1029569636872929281?ref_src=twsrc%5Etfw">August 15, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br>
+]
+
+.panel[.panel-name[Full Join]
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">inner_join() was the trickiest because the order of the rows matters when gganimate moves objects around. full_join() was a lot easier because all the elements stay visible. <a href="https://t.co/OJayK6M0BP">pic.twitter.com/OJayK6M0BP</a></p>&mdash; Garrick Aden-Buie (@grrrck) <a href="https://twitter.com/grrrck/status/1029570838784344065?ref_src=twsrc%5Etfw">August 15, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br>
+]
+
+.panel[.panel-name[Syntax]
+
+> *_join( df1, df2,
+by = c("df1_var1" = "df2_var2"))
+
+]
+
+.panel[.panel-name[An Example]
+
+```{r include=FALSE}
+
+emp_details <- tibble(
+  emp_id = c(123,234,345,567,1122),
+  emp_dept = c("sales","sales","R & D", "Finance","Customer Relations")
+)
+
+emp_personal_info <- tibble(
+  emp_unique_num = c(123,234,345,567,782),
+  name = c("ram", "shyam", "sita", "geeta","preet"),
+  marital_status = c("married","divorced", "unmarried","married","married")
+)
+
+```
+
+```{r}
+emp_details
+
+emp_personal_info
+```
+
+### Left join
+
+```{r}
+left_join(emp_details,emp_personal_info,
+          by = c("emp_id" = "emp_unique_num"))
+```
+
+<br>
+
+### Right Join
+
+```{r}
+right_join(emp_details,emp_personal_info,
+          by = c("emp_id" = "emp_unique_num"))
+```
+
+### Inner join
+
+```{r}
+inner_join(emp_details,emp_personal_info,
+          by = c("emp_id" = "emp_unique_num"))
+```
+
+### Full Join
+
+```{r}
+full_join(emp_details,emp_personal_info,
+          by = c("emp_id" = "emp_unique_num"))
+```
+
+<br>
+]
+
+]
+
+]
+---
+
+name: example Pivot Longer    
+class: top,center, inverse
+
+background-image: url(https://images.metmuseum.org/CRDImages/ad/original/DT1506.jpg)
+
+background-size: cover
+
+# Your Turn 4
+
+
+## `r icon_style(icons::fontawesome("keyboard"),scale = 3,fill = "white")`
+
+.left[
+
+
+Go to the project `Your Turn - Lecture 7`
+
+Open a file named `exercise for lecture 7.Rmd`
+
+Read the instructions and complete the exercise `Your Trun 4`
+
+]
+
+```{r time4, echo=FALSE}
+countdown(minutes = 7)
+```
+
+.small[
+[Background Image: The Chess Players by Thomas Eakins](https://images.metmuseum.org/CRDImages/ad/original/DT1506.jpg)
+]
+---
+class: inverse,center, middle
+
+background-image: url(https://images.metmuseum.org/CRDImages/ep/original/DP148490.jpg)
+background-size: cover
+
+# Thank You
+
+<br><br>
+.big[Feedback is welcome at: _ayush.ap58@gmail.com_]
+
+.small[
+[Background Image: Blind Orion Searching for the Rising Sun by Nicolas Poussin](https://images.metmuseum.org/CRDImages/ep/original/DP148490.jpg)
+]
+---

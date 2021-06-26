@@ -4,7 +4,7 @@
     <title>Implementation of basic statistical tools in R</title>
     <meta charset="utf-8" />
     <meta name="author" content="Ayush Patel" />
-    <meta name="date" content="2021-06-20" />
+    <meta name="date" content="2021-06-26" />
     <script src="libs/header-attrs-2.8/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/panelset-0.2.3.9000/panelset.css" rel="stylesheet" />
@@ -39,7 +39,7 @@ background-size: contain
 &lt;br&gt;
 .fontcol1[Workshop on Fundamentals of Data Analysis using R]&lt;br&gt;
 .fontcol1[Organised by Department of Economics, Kanchrapara College]&lt;br&gt;
-.fontcol1[2021-06-20] &lt;br&gt;
+.fontcol1[2021-06-26] &lt;br&gt;
 
 .pull-left[
 [Background image:  Black Stork in a Landscape](https://images.metmuseum.org/CRDImages/is/original/DP234080.jpg)
@@ -157,8 +157,8 @@ dbinom(x = c(0,1,2,3,4), size = 20, prob = 0.167)
 ```
 
 ```
-## [1] 0.02587617 0.10375320 0.19760438 0.23769459
-## [5] 0.20252549
+## [1] 0.02587617 0.10375320 0.19760438
+## [4] 0.23769459 0.20252549
 ```
 
 
@@ -205,7 +205,7 @@ rbinom(n = 1, size = 20,prob = 0.167)
 ```
 
 ```
-## [1] 1
+## [1] 4
 ```
 
 
@@ -214,7 +214,7 @@ rbinom(n = 10, size = 20,prob = 0.167)
 ```
 
 ```
-##  [1] 2 1 2 5 3 2 6 3 1 4
+##  [1] 2 4 5 5 3 7 7 2 4 1
 ```
 
 ]
@@ -256,7 +256,7 @@ Read the instructions and complete the exercise `Your Trun 1`
 
 ]
 
-<div class="countdown" id="timer_60cf503d" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_60d71367" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -416,7 +416,7 @@ Read the instructions and complete the exercise `Your Trun 2`
 
 ]
 
-<div class="countdown" id="timer_60cf4f9f" style="right:0;bottom:0;" data-warnwhen="0">
+<div class="countdown" id="timer_60d710d9" style="right:0;bottom:0;" data-warnwhen="0">
 <code class="countdown-time"><span class="countdown-digits minutes">04</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
 
@@ -442,10 +442,14 @@ table(data_survey$prefrence_food)
 
 ```
 ## 
-##         Gluten-free Food      Non-Vegetarian Food 
-##                        4                      199 
-## Strictly Vegetarian Food               Vegan food 
-##                       31                        3
+##         Gluten-free Food 
+##                        4 
+##      Non-Vegetarian Food 
+##                      199 
+## Strictly Vegetarian Food 
+##                       31 
+##               Vegan food 
+##                        3
 ```
 
 
@@ -529,11 +533,16 @@ goodnessOfFitTest(as.factor(data_survey$prefrence_food),
 ##    alternative: true probabilities differ from those specified
 ## 
 ## Descriptives: 
-##                          observed freq. expected freq.
-## Gluten-free Food                      4          59.25
-## Non-Vegetarian Food                 199          59.25
-## Strictly Vegetarian Food             31          59.25
-## Vegan food                            3          59.25
+##                          observed freq.
+## Gluten-free Food                      4
+## Non-Vegetarian Food                 199
+## Strictly Vegetarian Food             31
+## Vegan food                            3
+##                          expected freq.
+## Gluten-free Food                  59.25
+## Non-Vegetarian Food               59.25
+## Strictly Vegetarian Food          59.25
+## Vegan food                        59.25
 ##                          specified prob.
 ## Gluten-free Food                    0.25
 ## Non-Vegetarian Food                 0.25
@@ -569,7 +578,8 @@ head(data_survey$height_cm)
 ```
 
 ```
-## [1] 156.210 167.640 177.800 167.640 170.688 182.000
+## [1] 156.210 167.640 177.800 167.640
+## [5] 170.688 182.000
 ```
 
 
@@ -5664,12 +5674,16 @@ summary(model1)
 ## -26.307  -7.727  -0.816   5.548  32.339 
 ## 
 ## Coefficients:
-##              Estimate Std. Error t value Pr(&gt;|t|)    
-## (Intercept) -64.63649   12.50077  -5.171 4.99e-07 ***
-## height_cm     0.79037    0.07578  10.430  &lt; 2e-16 ***
+##              Estimate Std. Error
+## (Intercept) -64.63649   12.50077
+## height_cm     0.79037    0.07578
+##             t value Pr(&gt;|t|)    
+## (Intercept)  -5.171 4.99e-07 ***
+## height_cm    10.430  &lt; 2e-16 ***
 ## ---
 ## Signif. codes:  
-## 0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+##   0 '***' 0.001 '**' 0.01 '*' 0.05
+##   '.' 0.1 ' ' 1
 ## 
 ## Residual standard error: 11.11 on 235 degrees of freedom
 ## Multiple R-squared:  0.3164,	Adjusted R-squared:  0.3135 
