@@ -39,6 +39,8 @@ __Lecture 5 was conducted as a demonstration of concepts explored in previous 4 
 
 __[Link to Slides for lecture 6 ](/lecture6.html)__
 
+__[Link to Slides for lecture 7 ](/lecture7.html)__
+
 
 ## Other Important Documents
 
