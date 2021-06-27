@@ -194,7 +194,11 @@ tibble(
   item = c("shoes", "hat", "tie"),
   price = c("100$/7500INR", "50$/3750INR", "25$/1875INR")
 ) -> ex_unruly2
+
+ex_unruly2
 ```
+
+
 
 #### What we have seen
 
