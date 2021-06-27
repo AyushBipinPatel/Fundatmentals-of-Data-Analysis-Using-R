@@ -465,7 +465,7 @@ data_incomplete %>%
 .panel[.panel-name[Creating combinations]
 
 ```
-Say we have 5 individuals who go to try 2 food items in Kolkata.
+Say we have 2 individuals who go to try 3 food items in Kolkata.
 
 How to create a table with all combinations
 ```
