@@ -41,6 +41,8 @@ __[Link to Slides for lecture 6 ](/lecture6.html)__
 
 __[Link to Slides for lecture 7 ](/lecture7.html)__
 
+__[Link to Slides for lecture 8 ](/lecture8.html)__
+
 
 ## Other Important Documents
 
