@@ -69,3 +69,16 @@ Email: ayush.ap58@gmail.com
 Website: [ayushpatel.netlify.app](https://ayushpatel.netlify.app/)
 
 Twitter: [@ayushbipinpatel](https://twitter.com/ayushbipinpatel)
+
+## Acknowledgements
+
+### Books
+
+  * [R for Data Science by Hadley Wickham & Garrett Grolemund](https://r4ds.had.co.nz/)<br>
+  * [Hands-on Programming with R by Garrett Grolemund](https://rstudio-education.github.io/hopr/)<br>
+  * [Learning Statistics with R by Danielle Navarro](https://learningstatisticswithr.com/)<br>
+  
+### Other Resources
+
+  * Sharing Your Work with xaringan ([The Basics](https://spcanelon.github.io/xaringan-basics-and-beyond/slides/day-01-basics.html?panelset4=remark.js2&panelset5=nhsrtheme2&panelset6=moon-reader2&panelset7=markdown2#1) and [The Beyond](https://spcanelon.github.io/xaringan-basics-and-beyond/slides/day-02-beyond.html?panelset19=example4&panelset20=example5&panelset21=example6&panelset22=name2&panelset23=rules2&panelset24=code13&panelset25=code14&panelset26=code15&panelset27=code16&panelset28=code17&panelset29=code18&panelset30=code19&panelset31=code20&panelset32=code21&panelset33=code22&panelset34=code23&panelset35=code24&panelset36=light-palettes2&panelset37=nhs-identity4#1)) by [Silvia Canelon](https://silvia.rbind.io/) <br>
+  * [Meet xaringan](https://arm.rbind.io/slides/xaringan.html#1) by [Alison Hill](https://alison.rbind.io/)
